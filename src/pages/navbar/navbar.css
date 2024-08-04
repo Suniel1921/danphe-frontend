@@ -1,0 +1,32 @@
+.navbarContainer{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.logo{
+    width: 19%;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center    
+      
+
+}
+
+.navlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navlinks li,a{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--blackColor);
+}
+

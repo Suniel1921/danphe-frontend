@@ -1,0 +1,298 @@
+.service_container{
+    display: flex;
+    margin:50px auto auto auto;
+}
+
+.service_left{
+    width:50%;
+}
+.service_right{
+    width:50%;
+    padding:20px;
+}
+.service{
+    display: inline-block;
+    background-color: #f5f5f5;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom:20px;
+    font-size:15px;
+}
+.service_heading{
+    font-size:2.5rem;
+    line-height:48px;
+    color: #14133B;
+    font-weight:bold;
+}
+.service_paragraph{
+    line-height:30px;
+    padding:2px;
+
+}
+.read_about {
+    position: relative;
+    display: inline-block;
+    /* margin:80px 0 0 0; */
+    font-size: 1.5rem;
+    cursor: pointer;
+    overflow: hidden; /* Ensure text doesn't overflow */
+    padding-bottom: 2px; /* Space for underline */
+}
+
+.read_about::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor; /* Uses the text color for underline */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.read_about:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.read_about::after {
+    content: 'Read About Us';
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Positioned at the bottom */
+    width: 100%;
+    height: 100%;
+    color: #007bff; /* Same color as text on hover */
+    display: block;
+    transform: translateY(10px); /* Moves the duplicate text up */
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.read_about:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.container-box{
+    /* width:80%; */
+    margin:20px auto 30px auto;
+    display:flex;
+    justify-content:space-around;
+}
+.single-service-box {
+    width: 23%;
+    padding: 30px 10px 60px 10px;
+    margin: 10px;
+    border: 2px solid #d3d3d3;
+    border-radius: 20px;
+    position: relative; /* Required for positioning the text */
+    overflow: hidden; /* Ensure text doesn't overflow */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for box effect */
+}
+
+.single-icon {
+    background-color:#f3f0fa;
+    border-radius: 100%;
+    font-size: 3rem;
+    margin: 10px 0 30px 0;
+}
+
+.single-box-header {
+    font-size: 1.5rem;
+    font-weight: semi-bold;
+    margin: 10px 0 20px 0;
+}
+
+.single-box-paragraph {
+    font-size: 1.3rem;
+    margin: 0 0 20px 0; /* Default margin at the bottom */
+    transition: margin-bottom 0.3s; /* Smooth transition for margin change */
+}
+
+p {
+    color: #6A7C92;
+}
+
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    padding: 0px 10px 10px 10px;
+    color: #232323;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute; /* Positioning read-more within the box */
+    bottom: 20px;
+    left: 20px;
+    transition: padding 0.3s, left 0.3s; /* Smooth transition for padding and left */
+    font-size: 1.3rem; /* Set font size for text and icon */
+}
+
+.icon {
+    margin-right: 12px; /* Add space between icon and text */
+    transition: transform 0.3s; /* Smooth transition for transform */
+}
+
+.text {
+    position: absolute;
+    left: 100%;
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.9s, left 0.9s; /* Smooth transition for opacity and left */
+}
+
+.single-service-box:hover .read-more {
+    padding-left: 140px; /* Adjust based on text length and gap */
+}
+
+.single-service-box:hover .read-more .icon {
+    transform: translateX(-10px); /* Adjust for arrow movement */
+}
+
+.single-service-box:hover .read-more .text {
+    left: 12px; /* Adjust position of text to ensure no overlap */
+    opacity: 1;
+}
+
+.single-service-box:hover {
+    transform: scale(1.02); /* Optional: Slightly scale the box on hover */
+}
+
+.service-bottom{
+    text-align:center;
+    font-size:1.3rem;
+    color: #6A7C92;
+    margin:40px 0 60px 0;   
+}
+.service-bottom-highlight{
+    margin-left:6px;
+    color:red;
+    /* text-decoration: underline; */
+}
+
+
+
+/* //media query */
+/* For tablets and smaller laptops */
+@media (min-width:768px)  and (max-width:1100px){
+    .service_container{
+        display: block;
+        width:90%;
+        margin:50px auto auto auto;
+        /* flex-direction:column; */
+    }
+    
+    .service_heading {
+        font-size: 2rem ;
+        line-height:30px;
+    }
+    .service_paragraph {
+        font-size: 1.1rem;
+        line-height: 20px;
+    }
+    .single-service-box {
+        width: 30%;
+        padding: 25px 10px 50px 10px; 
+    }
+
+    .container-box {
+        width: 85%; 
+        margin: 20px auto; 
+    }
+}
+
+/* For small tablets and larger mobile devices */
+@media (min-width: 480px) and (max-width: 768px) {
+    .service_heading {
+        font-size: 2rem ;
+        line-height:30px;
+    }
+    .service_container {
+        display: block;
+    }
+    .service_left {
+        width: 100%;
+        
+    }
+    .service_right {
+        width: 100%;
+        padding:20px 0px;
+    }
+    .service_paragraph{
+        font-size:1.2rem;
+        line-height:25px;
+        padding:2px 2px 0 0;
+    
+    }
+    .read_about {
+        font-size: 1.3rem;
+        margin:30px 0 0 0;
+    }
+    .container-box{
+      
+        display:block;
+    }
+    .single-service-box {
+        width: 80%; /* Adjust width for screens between 480px and 768px */
+        /* padding: 20px 10px 40px 10px; //Adjust padding for better fit */
+        margin: 15px auto;
+        justify-content:center;
+    }
+
+    .container-box {
+        width: 90%; /* Increase width for screens in this range */
+        margin: 15px auto; /* Adjust margins */
+    }
+    .service-bottom{
+        font-size:1.2rem;
+        width:80%;
+        margin: 30px auto 40px auto;   
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    
+    .service_heading {
+        font-size: 1.7rem ;
+        line-height:25px;
+    }
+    /* .service_paragraph{
+        font-size:1.1rem;
+        line-height:22px;
+    
+    } */
+    .service_container {
+        display: block;
+        width:90%;
+        /* margin: 10px auto; */
+        /* left:0; */
+    }
+    .service_left {
+        width: 100%;
+        
+    }
+    .service_right {
+        width: 100%;
+        padding:20px 0px;
+    }
+    .container-box{
+      
+        display:block;
+    }
+    .single-service-box {
+        width: 80%; /* Adjust width for screens between 480px and 768px */
+        /* padding: 20px 10px 40px 10px; //Adjust padding for better fit */
+        margin: 15px auto;
+        justify-content:center;
+    }
+
+    .container-box {
+        width: 90%; /* Increase width for screens in this range */
+        margin: 15px auto; /* Adjust margins */
+    }
+}

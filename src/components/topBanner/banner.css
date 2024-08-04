@@ -1,0 +1,42 @@
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bannerLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.icons{
+    color: var(--whiteColor);
+    font-size: 1.5rem;
+    
+}
+
+.NepalTechlogo{
+    width: 5%;
+}
+
+.bannerContainer{
+    background-color: var(--darkBlue);
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+.waving-hand {
+    display: inline-block;
+    animation: wave 2s infinite;
+    transform-origin: 70% 70%;
+    font-size: 1.2em; 
+  }

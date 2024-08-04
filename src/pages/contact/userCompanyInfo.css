@@ -1,0 +1,129 @@
+/* .userCompanyInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cartData{
+    background-color: tomato;
+    margin-top: 23px;
+}
+
+ */
+
+
+
+
+
+/* Main wrapper for the form and cart */
+.formAndCartWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form styling */
+.userCompanyInfo {
+    flex: 2;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light grey background for form */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form section styling */
+.userCompanyInfoForm > div {
+    margin-bottom: 20px;
+}
+
+/* Form labels and inputs */
+.userCompanyInfoForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.userCompanyInfoForm input,
+.userCompanyInfoForm select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* .userCompanyInfoForm input[type="number"] {
+    -moz-appearance: textfield; 
+} */
+
+.userCompanyInfoForm input[type="number"]::-webkit-inner-spin-button,
+.userCompanyInfoForm input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Remove spinner for Chrome, Safari, and Opera */
+    margin: 0;
+}
+
+.userCompanyInfoForm button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.userCompanyInfoForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Cart styling */
+.rightCartData {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.cartData {
+    background-color: #ffffff; /* White background for cart */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+
+
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .formAndCartWrapper {
+        flex-direction: column;
+    }
+
+    .rightCartData {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .userCompanyInfoForm input,
+    .userCompanyInfoForm select {
+        font-size: 14px;
+    }
+
+    .userCompanyInfoForm button {
+        width: 100%;
+    }
+}
+
+
