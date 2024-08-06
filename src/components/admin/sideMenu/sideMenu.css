@@ -1,9 +1,18 @@
+.adminHeading{
+  color: var(--whiteColor);
+  /* text-align: center; */
+}
+
+
 .sideMenu {
     color: #fff;
     /* background-color: #212529; */
   
   }
   
+  .sideMenuChildHeading{
+    font-size: 17px;
+  }
   .sideMenu h3 {
     margin-bottom: 10px;
   }
@@ -21,6 +30,7 @@
   
   .dropdownTitle {
     margin-left: 5px; 
+    margin-top: 20px;
   }
   
   .dropdownContent {
@@ -39,7 +49,7 @@
   
   .dropdownContent p {
     margin: 5px 0;
-    padding: 5px 0;
+    padding: 12px 0;
     display: flex;
     align-items: center;
     color: #fff;

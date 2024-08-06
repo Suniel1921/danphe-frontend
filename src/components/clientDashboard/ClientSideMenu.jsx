@@ -69,7 +69,7 @@ const ClientSideMenu = () => {
                 <IoMdArrowDropright className="subItemIcon" /> Download
               </p>
             </Link>
-            <Link className='link' to='/dashboard/admin/createBrand'>
+            <Link className='link' to='/upload-documents'>
             <p><IoMdArrowDropright className="subItemIcon" />Documents</p>
             </Link>
             <Link className='link' to='/dashboard/admin/createBrand'>

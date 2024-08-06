@@ -21,6 +21,7 @@ import Contact from './pages/contact/Contact';
 import Checkout from './pages/cart/Checkout';
 import EditInfo from './components/clientDashboard/clientInfo/EditInfo';
 import ManageOrders from './components/admin/dashboardMainContent/manageOrders/ManageOrders';
+import UploadDocuments from './components/clientDashboard/clientInfo/UploadDocuments';
 
 const App = () => {
   return (
@@ -45,6 +46,7 @@ const App = () => {
             <Route element={<ProtectedRoute />}>
               <Route path='/client-dashboard' element={<ClientDashboard />} />
               <Route path='/edit-info' element={<EditInfo/>} />
+              <Route path='/upload-documents' element={<UploadDocuments/>} />
             </Route>
 
             {/* Admin protected route */}
