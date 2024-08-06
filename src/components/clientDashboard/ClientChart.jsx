@@ -136,6 +136,14 @@
 
 import React from 'react'
 import '../clientDashboard/clientChart.css'
+import ClientOrder from './clientInfo/ClientOrder'
+import ClientProgress from './clientInfo/ClientProgress'
+import ClientPayments from './clientInfo/ClientPayments'
+import TotalProgressWork from './clientInfo/TotalProgressWork'
+import ClientDocumentStatus from './clientInfo/ClientDocumentStatus'
+import Remarks from './clientInfo/Remarks'
+import TotalPercentageOfWork from './clientInfo/TotalPercentageOfWork'
+import PaymentHistory from './clientInfo/PaymentHistory'
 
 const ClientChart = () => {
   return (
@@ -143,14 +151,14 @@ const ClientChart = () => {
     <div className="clientChartContainer">
       <div className="container">
       <div className='client_Grid_Dashboard'>
-        <div className='client_charts box1'>box1</div>
-        <div className='client_charts box2'>box2</div>
-        <div className='client_charts box3'>box3</div>
-        <div className='client_charts box4'>box4</div>
-        <div className='client_charts box5'>box5</div>
-        <div className='client_charts box6'>box6</div>
-        <div className='client_charts box7'>box7</div>
-        <div className='client_charts box8'>box8</div>
+        <div className='client_charts box1'><ClientOrder/></div>
+        <div className='client_charts box2'><ClientProgress/></div>
+        <div className='client_charts box3'><ClientPayments/></div>
+        <div className='client_charts box4'><TotalProgressWork/></div>
+        <div className='client_charts box5'><ClientDocumentStatus/></div>
+        <div className='client_charts box6'><PaymentHistory/></div>
+        <div className='client_charts box7'><Remarks/></div>
+        <div className='client_charts box8'><TotalPercentageOfWork/></div>
       </div>
       </div>
     </div>

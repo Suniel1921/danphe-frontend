@@ -6,7 +6,7 @@
     margin-top: 12px;
     grid-auto-rows: minmax(200px auto);
     height: 90vh;
-    color: var(--blackColor)
+    color: var(--blackColor);
   }
   
 .client_charts {

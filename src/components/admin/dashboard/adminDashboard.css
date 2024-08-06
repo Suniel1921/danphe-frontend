@@ -1,5 +1,5 @@
 .adminDashboard{
-    background-color: #e6e7e9;
+    /* background-color: #e6e7e9; */
     display: flex;
     gap: 20px;
     color : white;
@@ -19,10 +19,6 @@
     margin-top: 50px;
     height: 100vh;
 }
-
-
-
-
 
 .adminDashboard{
     /* background-color: #0f1535; */

@@ -10,7 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "antd": "^5.19.3",
+    "@ant-design/icons": "^5.4.0",
+    "antd": "^5.20.0",
     "axios": "^1.7.2",
     "chart.js": "^4.4.3",
     "formik": "^2.4.6",

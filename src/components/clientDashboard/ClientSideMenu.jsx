@@ -39,9 +39,16 @@ const ClientSideMenu = () => {
             <span className="dropdownTitle">Dashboard</span>
           </h3>
           <div className={`dropdownContent ${dropdowns.ecommerce ? 'open' : ''}`}>
-            <Link className='link' to={'/edit-info'}> 
-            <p><IoMdArrowDropright className="subItemIcon" />Edit Information</p>
+
+          <Link className='link' to={'/client-dashboard'}> 
+            <p><IoMdArrowDropright className="subItemIcon" />Home</p>
             </Link>
+
+
+            <Link className='link' to={'/edit-info'}> 
+            <p><IoMdArrowDropright className="subItemIcon" />Edit Info</p>
+            </Link>
+           
            
             {/* <p><IoMdArrowDropright className="subItemIcon" /> Password</p> */}
             <p><IoMdArrowDropright className="subItemIcon" /> Address Book</p>
