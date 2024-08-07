@@ -193,15 +193,15 @@ const Login = () => {
                         </div>
                     </div>
                     <div className="form-options">
-                        <div className="rememberMe">
+                        {/* <div className="rememberMe">
                             <input type="checkbox" id="remember-me" />
                             <label htmlFor="remember-me">Remember me</label>
-                        </div>
+                        </div> */}
                         <a onClick={() => setModalVisible(true)} className="forgot-password">Forgot Password?</a>
                     </div>
-                    <button type="submit" className="sign-in-button">Sign in</button>
+                    <button type="submit" className="sign-in-button">Log in</button>
                 </form>
-                <button className="sign-in-other">Sign in with Google</button>
+                {/* <button className="sign-in-other">Sign in with Google</button> */}
                 <p className="sign-up-prompt">Don't have an account? <Link className="link" to={'/register'}>Create Here</Link></p>
             </div>
             <ForgotPasswordModal visible={modalVisible} onClose={() => setModalVisible(false)} /> {/* Add the modal */}
@@ -210,3 +210,4 @@ const Login = () => {
 };
 
 export default Login;
+

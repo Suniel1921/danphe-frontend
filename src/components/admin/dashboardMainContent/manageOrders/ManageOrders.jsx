@@ -72,7 +72,7 @@ const ManageOrders = () => {
                   </select>
                 </div>
                 <div>
-                  <button onClick={() => updateStatus(order._id)}>Update</button>
+                  <button className='adminUpdateBtn' onClick={() => updateStatus(order._id)}>Update</button>
                 </div>
               </div>
             ))}

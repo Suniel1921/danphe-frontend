@@ -4,6 +4,7 @@
 // import { MdDeleteForever } from "react-icons/md";
 // import { useAuthGlobally } from '../../contexts/AuthContext';
 // import { useCartGlobally } from '../../contexts/cartContext';
+// import axios from 'axios';
 
 // const Cart = () => {
 //     const { cart, incrementQuantity, decrementQuantity, removeFromCart } = useCartGlobally();
@@ -12,11 +13,20 @@
 
 //     const totalPrice = cart.reduce((acc, item) => acc + (Number(item.price) * item.quantity), 0);
 
-//     const handleCheckout = () => {
+//     const handleCheckout = async () => {
 //         if (!auth.user) {
 //             navigate('/login');
 //         } else {
-//             navigate('/contact-info');
+//             try {
+//                 await axios.post(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/order/createOrder`, {user: auth.user._id,items: cart,total: totalPrice});
+//                 // Clear cart after successful order
+//                 localStorage.removeItem('cart');
+//                 // Add logic to clear the cart context state if needed
+//                 navigate('/contact-info'); // Redirect to a success page
+//                 // navigate('/order-success'); // Redirect to a success page
+//             } catch (err) {
+//                 console.error('Error creating order', err);
+//             }
 //         }
 //     };
 
@@ -56,13 +66,7 @@
 //                         <div className="summaryDetails">
 //                             <p>ITEMS {cart.length}</p>
 //                             <p>Total: Rs {Number(totalPrice.toFixed(2))}</p>
-//                             {/* <label>SHIPPING</label> */}
-//                             {/* <select>
-//                                 <option>Cash On Delivery</option>
-//                                 <option>Khalti</option>
-//                             </select> */}
 //                             <button className="checkoutBtn" onClick={handleCheckout}>Continue</button>
-//                             {/* <button className="checkoutBtn" onClick={handleCheckout}>PROCEED TO CHECKOUT</button> */}
 //                         </div>
 //                     </div>
 //                 </div>
@@ -72,9 +76,6 @@
 // };
 
 // export default Cart;
-
-
-
 
 
 
@@ -90,22 +91,26 @@ import axios from 'axios';
 
 const Cart = () => {
     const { cart, incrementQuantity, decrementQuantity, removeFromCart } = useCartGlobally();
-    const [auth, setAuth] = useAuthGlobally();
+    const [auth] = useAuthGlobally();
     const navigate = useNavigate();
 
+    // Calculate total price
     const totalPrice = cart.reduce((acc, item) => acc + (Number(item.price) * item.quantity), 0);
 
+    // Handle checkout process
     const handleCheckout = async () => {
         if (!auth.user) {
             navigate('/login');
         } else {
             try {
-                await axios.post(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/order/createOrder`, {user: auth.user._id,items: cart,total: totalPrice});
+                await axios.post(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/order/createOrder`, {
+                    user: auth.user._id,
+                    items: cart,
+                    total: totalPrice
+                });
                 // Clear cart after successful order
                 localStorage.removeItem('cart');
-                // Add logic to clear the cart context state if needed
-                navigate('/contact-info'); // Redirect to a success page
-                // navigate('/order-success'); // Redirect to a success page
+                navigate('/contact-info'); // Redirect to the contact info page
             } catch (err) {
                 console.error('Error creating order', err);
             }
@@ -136,7 +141,9 @@ const Cart = () => {
                                             <button onClick={() => incrementQuantity(item._id)}>+</button>
                                         </div>
                                     </div>
-                                    <button className="removeItem" onClick={() => removeFromCart(item._id)}><MdDeleteForever/></button>
+                                    <button className="removeItem" onClick={() => removeFromCart(item._id)}>
+                                        <MdDeleteForever />
+                                    </button>
                                 </div>
                             ))
                         ) : (
@@ -146,7 +153,7 @@ const Cart = () => {
                     <div className="summary">
                         <h3>Summary</h3>
                         <div className="summaryDetails">
-                            <p>ITEMS {cart.length}</p>
+                            <p>ITEMS: {cart.length}</p>
                             <p>Total: Rs {Number(totalPrice.toFixed(2))}</p>
                             <button className="checkoutBtn" onClick={handleCheckout}>Continue</button>
                         </div>

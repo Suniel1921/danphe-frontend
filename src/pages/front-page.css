@@ -1,3 +1,20 @@
+
+.bgText{
+    background: linear-gradient(97deg, rgba(121,8,16,1) 0%, rgba(242,127,127,1) 100%);
+    padding: 0px;
+    color: white;
+}
+.childBG{
+    background-color: red;
+    padding: 23px;
+    transform: rotate(2deg);
+}
+
+
+
+/* ****** */
+
+
 .service_container{
     display: flex;
     margin:50px auto auto auto;

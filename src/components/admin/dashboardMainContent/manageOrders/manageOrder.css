@@ -5,6 +5,9 @@
   margin-top: 22px;
 }
 
+.adminUpdateBtn{
+  color: var(--whiteColor);
+}
 .selectProcessingDropdown{
   background-color: transparent;
 }

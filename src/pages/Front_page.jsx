@@ -16,6 +16,14 @@ import Testimonials from "../pages/Testimonials/Testimonials";
 const Front_page = () => {
     return (
         <>
+
+        <div className="bgText">
+            <div className="childBG">
+                <marquee behavior="" direction="">1text goes 2text goes here  3text goes here </marquee>
+            </div>
+
+        </div>
+      
             <div className="frontPageContainer">
                 <div className="container">
                     <div className="service_container">
@@ -104,6 +112,9 @@ const Front_page = () => {
                         Bring them together and you overcome the ordinary.
                         <span className="service-bottom-highlight">See what we do</span>
                     </div>
+
+                   
+
 
                     <Let_start />
             <About_us />

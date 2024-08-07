@@ -1,32 +1,46 @@
-.navbarContainer{
+.navbarContainer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 }
 
-.logo{
-    width: 19%;
+.logo {
+    width: 25%;
 }
 
-
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center    
-      
-
+    align-items: center;
+    padding: 5px;
 }
 
-.navlinks{
+.navlinks {
     display: flex;
+    align-items: center;
+}
+
+.navlinks ul {
+    display: flex;
+    gap: 20px; /* Set the desired gap between the links */
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
-.navlinks li,a{
-    list-style-type: none;
+.navlinks li {
+    list-style-type: none; /* Remove default list style */
+}
+
+.navlinks a {
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 17px;
     color: var(--blackColor);
+    transition: color 0.3s; /* Add transition for smoother color change */
+    white-space: nowrap; /* Prevents wrapping */
 }
 
+/* Active link styles */
+.active-link {
+    font-weight: bold; /* Highlight active link */
+    color: var(--primaryColor); /* Change to your desired active link color */
+}

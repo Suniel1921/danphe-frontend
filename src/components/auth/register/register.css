@@ -1,91 +1,83 @@
-.errors{
-    color: var(--redTextColor);
-}  
+/* Errors */
+.errors {
+    color: var(--redTextColor); /* Keep your existing color variable */
+    margin-bottom: -4px;
+  }
   
-  .formHeading{
+  /* Form Heading */
+  .formHeading {
     text-align: center;
     margin-bottom: 10px;
   }
-
-
-
-
-.register-container {
+  
+  /* Register Container */
+  .register-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    /* background: linear-gradient(to right, #0052cc, #3a7bd5); */
+    height: 70vh;
     padding: 20px;
-}
-
-.form label{
-    font-size: 14px;
-}
+    background-color: rgba(128, 128, 128, 0.116);
+  }
   
-.form-section {
+  /* Form Section */
+  .form-section {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-}
-
-.form-section h2 {
-    margin-bottom: 1em;
-}
+  }
   
-.input-group {
+  /* Form Elements */
+  .form label {
+    font-size: 14px;
+  }
+  
+  .input-group {
     margin-bottom: 1em;
-}
-
-.input-group label {
+  }
+  
+  .input-group label {
     display: block;
     margin-bottom: 0.5em;
     font-weight: bold;
-}
-
-.input-group input {
+  }
+  
+  .input-group input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-/* .password-wrapper {
-    display: flex;
-    align-items: center;
-    
-} */
-
-.password-wrapper .show-password {
-    margin-left: 10px;
+    padding-right: 40px; /* Add space for the eye icon */
+    box-sizing: border-box;
+  }
+  
+  /* Password Wrapper */
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .password-wrapper .show-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     background: none;
     border: none;
     color: var(--secondaryBlueColor);
     cursor: pointer;
-}
-
-.form-options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1em;
-}
-
-.remeberMe {
+    font-size: 1.2em;
     display: flex;
     align-items: center;
-}
-
-.forgot-password {
-    color: #0052cc;
-    text-decoration: none;
-}
-
-.sign-in-button, .sign-in-other {
+    justify-content: center;
+  }
+  
+  /* Button Styles */
+  .sign-in-button,
+  .sign-in-other {
     display: block;
     width: 100%;
     padding: 10px;
@@ -96,35 +88,35 @@
     cursor: pointer;
     font-size: 1em;
     margin-bottom: 1em;
-}
-
-.sign-in-other {
+  }
+  
+  .sign-in-other {
     background-color: #ccc;
     color: #333;
-}
-
-.sign-up-prompt {
-    text-align: center;
-}
-
-.sign-up-link {
-    color: #0052cc;
-    text-decoration: none;
-}
-
-.errors{
-    color: red;
+  }
   
-}
-
-
-@media (max-width: 768px) {
+  /* Sign Up Prompt */
+  .sign-up-prompt {
+    text-align: center;
+  }
+  
+  .sign-in-button {
+    margin-top: 12px;
+  }
+  
+  .forgot-password {
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
     .register-container {
-        flex-direction: column;
+      flex-direction: column;
     }
-
+  
     .form-section {
-        width: 100%;
-        padding: 15px;
+      width: 100%;
+      padding: 15px;
     }
-}
+  }
+  

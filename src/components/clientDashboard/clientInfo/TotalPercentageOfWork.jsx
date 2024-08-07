@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Progress } from 'antd';
-import 'antd/dist/reset.css'; // Import Ant Design styles
+import { Progress, Typography } from 'antd';
+import 'antd/dist/reset.css'; 
+
+const { Title } = Typography;
 
 const TotalPercentageOfWork = () => {
   const [percentage, setPercentage] = useState(0);
@@ -63,7 +65,7 @@ const TotalPercentageOfWork = () => {
   return (
     <div className="TotalPercentageOfWorkContainer">
       <div className="container">
-        <h3>Total Percentage of Work</h3>
+        <Title style={{color: '#fff'}} level={4}>Total Percentage of Work</Title>
         <Progress
           type="circle"
           percent={percentage}
@@ -77,3 +79,24 @@ const TotalPercentageOfWork = () => {
 };
 
 export default TotalPercentageOfWork;
+
+
+
+
+
+
+
+
+// import React from 'react';
+// import { Progress, Typography } from 'antd';
+
+// const { Title } = Typography;
+
+// const TotalPercentageOfWork = () => (
+//   <>
+//     <Title style={{color: '#fff'}} level={4}>Total Percentage of Work</Title>
+//     <Progress type="circle" percent={50} />
+//   </>
+// );
+
+// export default TotalPercentageOfWork;

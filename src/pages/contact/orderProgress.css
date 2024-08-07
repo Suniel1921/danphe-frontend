@@ -1,114 +1,77 @@
-/* .order-progress {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #f1f1f1;
-    border-radius: 4px;
-  }
-  
-  .step {
-    position: relative;
-    flex: 1;
-    text-align: center;
-    padding: 10px;
-    font-weight: bold;
-    color: #666;
-  }
-  
-  .step:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #ddd;
-    z-index: -1;
-    transform: translateY(-50%);
-  }
-  
-  .step.completed {
-    color: #3dc547;
-  }
-  
-  .step.current {
-    color: #3d82c5;
-  }
-  
-  .step-icon {
-    margin-left: 8px;
-  }
-  
-  .completed-icon {
-    color: #3dc547;
-  }
-  
-  .pending-icon {
-    color: #ddd;
-  }
-   */
+/* Order progress container styles */
+.order-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #d9534f;
+  padding: 10px 0;
+  margin: 0 20px;
+}
 
+/* Individual step styles */
+.step {
+  position: relative;
+  padding: 10px;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  color: #999;
+}
 
+/* Current step styles */
+.step.current {
+  color: #337ab7;
+  font-weight: bold;
+}
 
+/* Completed step styles */
+.step.completed {
+  color: green;
+}
 
-   .order-progress {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #d9534f;
-    padding: 10px 0;
-    margin: 0 20px;
-  }
-  
-  .step {
-    position: relative;
-    padding: 10px;
-    border: none;
-    background: none;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 16px;
-    color: #999;
-  }
-  
-  .step.current {
-    color: #337ab7;
-    font-weight: bold;
-  }
-  
-  .step.completed {
-    color: green;
-  }
-  
-  .step.completed .icon {
-    color: green;
-  }
-  
-  .step.current .icon {
-    color: #337ab7;
-  }
-  
-  .icon {
-    font-size: 20px;
-    color: #ddd;
-  }
-  
-  /* .step::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid #d9534f;
+/* Icon color for completed steps */
+.step.completed .icon {
+  color: green;
+}
+
+/* Icon color for current steps */
+.step.current .icon {
+  color: #337ab7;
+}
+
+/* Default icon styles */
+.icon {
+  font-size: 20px;
+  color: #ddd;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .order-progress {
+    /* flex-direction: column; 
+    align-items: flex-start;  */
     display: none;
-  } */
-  
-  .step.current::after {
-    display: block;
   }
-  
+
+  .step {
+    font-size: 14px; /* Reduce font size on smaller screens */
+    padding: 5px 0; /* Adjust padding for smaller screens */
+  }
+
+  .icon {
+    font-size: 18px; /* Adjust icon size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .step {
+    font-size: 12px; /* Further reduce font size for very small screens */
+  }
+
+  .icon {
+    font-size: 16px; /* Adjust icon size for very small screens */
+  }
+}
