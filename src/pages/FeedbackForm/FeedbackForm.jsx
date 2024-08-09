@@ -6,6 +6,7 @@ const FeedbackForm = () => {
     <section>
       <div className="container">
         <h2 className='h2_div'> Contact Us</h2>
+        
 
         <div className="container_div">
           <div className="mapSection">
@@ -18,13 +19,13 @@ const FeedbackForm = () => {
             ></iframe>
             <div className="addressSection">
               <div className="addressText">
-                <h2 className="title">ADDRESS</h2>
+                <h2 className="title_contact">ADDRESS</h2>
                 <p>Rio 5 Marg, Lalitpur 44700</p>
               </div>
               <div className="addressText">
-                <h2 className="title">EMAIL</h2>
+                <h2 className="title_contact">EMAIL</h2>
                 <a className="emailSection" href="mailto:example@email.com">example@email.com</a>
-                <h2 className="title">PHONE</h2>
+                <h2 className="title_contact">PHONE</h2>
                 <p className="emailSection">123-456-7890</p>
               </div>
             </div>
@@ -43,7 +44,7 @@ const FeedbackForm = () => {
               <label htmlFor="message" className="label">Message</label>
               <textarea id="message" name="message" className="textarea"></textarea>
             </div>
-            <button className="button">Send</button>
+            <button className="button_send">Send</button>
             {/* <p className="footerText">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p> */}
           </div>
         </div>

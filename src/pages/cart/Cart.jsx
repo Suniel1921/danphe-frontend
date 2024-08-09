@@ -88,6 +88,7 @@ import { MdDeleteForever } from "react-icons/md";
 import { useAuthGlobally } from '../../contexts/AuthContext';
 import { useCartGlobally } from '../../contexts/cartContext';
 import axios from 'axios';
+import Navbar from '../navbar/Navbar';
 
 const Cart = () => {
     const { cart, incrementQuantity, decrementQuantity, removeFromCart } = useCartGlobally();

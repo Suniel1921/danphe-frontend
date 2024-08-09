@@ -1,11 +1,46 @@
+.processBG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEF2F2; /* Light pink background */
+    padding: 5px 15px;
+    border-radius: 25px; /* Rounded background */
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto; /* Center horizontally */
+}
+
+  
+  .process_redDot {
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%; /* Creates the red dot */
+    margin-right: 8px; /* Space between the dot and text */
+  }
+  
+  .process{
+    font-size: 12px;
+    color: #2a2a2a; /* Darker text color for contrast */
+    margin: 0;
+  }
+
+
 
 .widget-section {
-    background-color: #f8f9fa;
+    background-color: #D0E9F0;
     padding: 4rem 3rem;
-    border-radius:20px;
-    margin:20px auto;
-    background-color:#D0E9F0;
+    width: 95%;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column; /* Ensure vertical alignment */
+    align-items: center; /* Center align items horizontally */
+    text-align: center; /* Center align text */
 }
+
+
+
 
 .widget-container {
     max-width: 1200px;
@@ -18,6 +53,7 @@
     font-weight: bold;
     color: #14133B; /* dark foreground color */
     margin-bottom: 1rem;
+    margin-top: 23px;
 }
 
 .widget-description {
@@ -39,6 +75,11 @@
 @media (min-width: 768px) {
     .widget-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 768px) and (max-width:1000px) {
+    .widget-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -78,8 +119,8 @@
     /* border-radius: 50%; */
     /* border: 1px solid black; */
     padding: 10px;
-    width: 40px;
-    height: 40px; /* Ensure it's square */
+    width: 20px;
+    height: 20px; /* Ensure it's square */
     color: #007bff; /* Primary color */
     text-decoration: none;
     position: relative;
@@ -118,4 +159,75 @@
     color: #17a2b8; /* accent color */
     text-decoration: none;
     font-size:1.3rem;
+}
+@media(max-width:768px){
+    .widget-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        line-height:40px;
+    }
+    .widget-container {
+       
+        text-align: left;
+    }
+    .widget-description {
+        width: 100%;
+        font-size: 1.1rem;
+        align-items: center;
+        text-align: left;
+        line-height: 1.5rem;
+        margin : 20px auto 1rem auto;
+
+    }
+    .widget-card {
+        padding: 0rem 1rem 1rem 1rem;
+    }
+    
+.widget-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+.widget-text {
+    margin-bottom: 0.1rem;
+    line-height: 1.5rem;
+}
+}
+@media (max-width: 950px) and (min-width: 768px) {
+    .widget-section {
+        background-color: #f8f9fa; /* light background color */
+        padding: 2rem 2rem;
+        width:90%;
+        border-radius:20px;
+        margin:10px auto;
+        background-color:#D0E9F0;
+    }
+    .widget-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        line-height:40px;
+    }
+    .widget-container {
+       
+        text-align: left;
+    }
+    .widget-description {
+        width: 100%;
+        font-size: 1.1rem;
+        align-items: center;
+        text-align: left;
+        line-height: 1.5rem;
+        margin : 20px auto 1rem auto;
+    }
+    .widget-card {
+        padding: 0rem 1rem 1rem 1rem;
+    }
+    
+.widget-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+.widget-text {
+    margin-bottom: 0.1rem;
+    line-height: 1.5rem;
+}
 }

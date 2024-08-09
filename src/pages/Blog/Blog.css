@@ -9,6 +9,7 @@
 }
 
 .Blog_main {
+    width: 80%;
     margin: auto  auto  50px auto ;
 }
 
@@ -38,12 +39,12 @@
 .blog_heading {
     font-size: 2.5rem;
     line-height: 48px;
-    color: "#14133";
+    color: #14133;
     font-weight: bold;
 }
 
 .blog_paragraph {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 30px;
     padding: 2px;
 }
@@ -108,6 +109,13 @@
     .blog-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+    
+}
+@media (min-width: 768px) and (max-width:1000px) {
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
 
 .blog-card {
@@ -118,8 +126,10 @@
     text-align: left;
     background-color: #fff;
     overflow: hidden;
-    border: 1px solid rgb(190, 190, 190);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    height:300px;
+        /* width:; */
+
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .blog-card::before {
@@ -128,8 +138,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    /* height: 250px; */
+    background: rgba(0, 0, 0, 0.4);
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 0;
@@ -165,11 +175,12 @@
     display: inline-block;
     padding: 3px;
     border-radius: 10px;
-    font-size: 0.rem;
+    /* font-size: 0.rem; */
 }
 
+
 .blogCardHeading h3 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     display: inline-block;
     margin-top: 30px;
     position: relative;
@@ -280,4 +291,66 @@
 /* Move the arrow when hovering over the blog card */
 .blog-card:hover .arrow::after {
     transform: translateY(-10px);
+}
+
+
+
+@media (max-width: 768px) {
+    .blog_container {
+        display: block;
+    }
+    .blog_left {
+        width: 100%;
+    }
+    .blog-card {
+        padding: 0px;
+    }
+    .blog_right {
+        width: 100%;
+        padding: 0px;
+    }
+    .blog_heading {
+        font-size: 1.5rem;
+        line-height: 30px;
+        /* color: #14133; */
+        font-weight: bold;
+    }
+    .Read_Blog_Button {
+        margin: 10px 0 0 0;
+        font-size: 1.1rem;
+    }
+    .blogCardHeading h5 {
+        margin: 5px 0 5px 0;
+        display: inline-block;
+        
+    }
+    
+    .blogCardHeading h3 {
+        font-size: 1.2rem;
+        display: block;
+    }
+}
+@media (min-width:768px)  and (max-width:1100px){
+    .blog_container {
+     display: block;
+    }
+    .blog_left {
+        width: 100%;
+    }
+    .blog_right {
+        width: 100%;
+        padding: 0px;
+    }
+    .Read_Blog_Button {
+     margin: 0px 0 0 0;
+    }
+    .blog_heading {
+        font-size: 2rem;
+        line-height: 30px;
+    }
+    .blog_paragraph {
+        font-size: 1.1rem;
+        line-height: 25px;
+        padding: 1px;
+    }
 }

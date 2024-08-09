@@ -1,9 +1,12 @@
 .fixed-background {
+    /* The image used */
     background-image: url("./Image_2.jpg");
+    /* background-color: #fff; */
+    width:95%;
     border-radius:20px;
     object-fit:fill;
     margin: auto auto 20px auto;
-
+    /* Set a specific height */
     min-height: 500px;
   
     /* Create the parallax scrolling effect */

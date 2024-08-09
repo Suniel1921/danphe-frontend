@@ -5,6 +5,7 @@ import "../pricing/quotePricing.css";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
+import Navbar from "../navbar/Navbar";
 
 // Main QuotePricing Component
 const QuotePricing = () => {

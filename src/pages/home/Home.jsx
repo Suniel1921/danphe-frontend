@@ -1,13 +1,13 @@
 import React from 'react'
 import HomeSlider from '../../components/slider/HomeSlider'
-import Front_page from '../Front_page'
+import Top_Main from '../Top_main/Top_main'
 
 const Home = () => {
   return (
     <div>
       <div className='homeContainer'>
-            <HomeSlider/>
-            <Front_page/>
+            {/* <HomeSlider/> */}
+            <Top_Main/>
       </div>
     </div>
   )

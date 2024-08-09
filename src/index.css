@@ -43,3 +43,37 @@ form input{
 
 
 
+
+
+
+
+/* dark mode  */
+
+
+
+
+/* Default (light theme) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navbar_container {
+  /* background-color: #ffffff; */
+}
+
+/* Dark theme */
+body.dark {
+  background-color: #1E2636;
+  color: #ffffff;
+}
+
+.navbar_container.dark {
+  /* background-color: #1E2636; */
+  background-color: #333333;
+}
+
+/* Additional dark mode styles */
+.navbar_container.dark .navbarlogo img {
+  filter: invert(1);
+}

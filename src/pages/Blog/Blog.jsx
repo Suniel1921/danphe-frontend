@@ -20,6 +20,7 @@ const Blog = () => {
                         Read About Us
                     </div>
                 </div>
+                
             </div>
             <div className="blog-grid">
                 <div className="blog-card">
