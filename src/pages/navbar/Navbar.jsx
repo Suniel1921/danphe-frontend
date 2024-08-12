@@ -284,13 +284,13 @@ const Navbar = () => {
   const aboutUs = (
     <Menu>
       <Menu.Item key="heading1">
-        <NavLink to="/contact">about 1</NavLink>
+        <NavLink to="/About_Ascend">About Ascend.com</NavLink>
       </Menu.Item>
       <Menu.Item key="heading2">
-        <NavLink to="#">about 2</NavLink>
+        <NavLink to="/Corporate_Gurantee">Corporate Compilance Gurantee</NavLink>
       </Menu.Item>
       <Menu.Item key="heading3">
-        <NavLink to="#">about 3</NavLink>
+        <NavLink to="/Customer_review">Recent Customer Review</NavLink>
       </Menu.Item>
     </Menu>
   );

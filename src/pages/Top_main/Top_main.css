@@ -49,7 +49,7 @@
 
 .main_background_left {
     width: 50%;
-    align-items: center;
+    /* align-items: center; */
     height: 50%;
     margin: 3% 0 0 5%;
     display: flex;

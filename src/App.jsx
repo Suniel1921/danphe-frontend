@@ -22,6 +22,9 @@ import Checkout from './pages/cart/Checkout';
 import EditInfo from './components/clientDashboard/clientInfo/EditInfo';
 import ManageOrders from './components/admin/dashboardMainContent/manageOrders/ManageOrders';
 import UploadDocuments from './components/clientDashboard/clientInfo/UploadDocuments';
+import About_Ascend from './pages/Navbar_aboutus/About_Ascend.com/About_Ascend';
+import Corporate_Gurantee from './pages/Navbar_aboutus/Corporate Compilance Gurantee/Corporate_Gurantee';
+import Customer_review from './pages/Navbar_aboutus/Recent Customer Reviews/Customer_review';
 
 const App = () => {
   return (
@@ -41,6 +44,13 @@ const App = () => {
             <Route path='/contact-info' element={<UserContactInfo />} />
             <Route path='/company-info' element={<UserCompanyInfo />} />
             <Route path='/checkout' element={<Checkout />} />
+            
+
+
+            {/* Suman */}
+            <Route path='/About_Ascend' element= { <About_Ascend/> }/> 
+            <Route path='/Corporate_Gurantee' element= { <Corporate_Gurantee/> }/> 
+            <Route path='/Customer_review' element= { <Customer_review/> }/> 
 
             {/* Protected route */}
             <Route element={<ProtectedRoute />}>

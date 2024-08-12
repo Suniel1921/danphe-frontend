@@ -17,6 +17,10 @@ import Profile from "./Profile/Profile";
 // import Banner2 from './pages/Banner copy/Banner2';
 import imge from "./12.png";
 import Footer from "./footer/Footer";
+import AssignmentTurnedInIcon from '@mui/icons-material/AssignmentTurnedIn';
+import BusinessIcon from '@mui/icons-material/Business';
+import RoomIcon from '@mui/icons-material/Room';
+
 
 const Front_page = () => {
     return (
@@ -57,12 +61,11 @@ const Front_page = () => {
 
             <div className="container-box">
                 <div className="single-service-box">
-                    <TbReportAnalytics className="single-icon" />
+                <BusinessIcon className="single-icon" />
 
-                    <h3 className="single-box-header">Insights & Analytics</h3>
+                    <h3 className="single-box-header">Register in Additional States</h3>
                     <p className="single-box-paragraph">
-                        We always provide people a complete solution focused of any
-                        business.
+                        In order to do business legally in states other than your home state, you may need to register (also referred to as qualifying) your company in those states.
                     </p>
                     <div className="read-more">
                         <FaArrowRight className="arrow_icon" />
@@ -71,12 +74,11 @@ const Front_page = () => {
                 </div>
 
                 <div className="single-service-box">
-                    <TbReportAnalytics className="single-icon" />
+                <RoomIcon className="single-icon"/>
 
-                    <h3 className="single-box-header">Strategic Marketing</h3>
+                    <h3 className="single-box-header">Find a State</h3>
                     <p className="single-box-paragraph">
-                        We always provide people a complete solution focused of any
-                        business.
+                        Find the right state to incorporate your company. CSC offers incorporation services in all 50 states and the District of Columbia.
                     </p>
                     <div className="read-more">
                         <FaArrowRight className="arrow_icon" />
@@ -85,11 +87,11 @@ const Front_page = () => {
                 </div>
 
                 <div className="single-service-box">
-                    <TbReportAnalytics className="single-icon" />
+               < AssignmentTurnedInIcon className="single-icon" />
 
-                    <h3 className="single-box-header">Business Consulting</h3>
+                    <h3 className="single-box-header">Stay on Track</h3>
                     <p className="single-box-paragraph">
-                        We always provide people a complete solution focused of any
+                        Once incorporated, make sure your business stays in compliance. Our Registered Agent service monitors your company’s status and ensures that you meet critical, time-sensitive deadlines.We always provide people a complete solution focused of any
                         business.
                     </p>
                     <div className="read-more">
@@ -98,7 +100,7 @@ const Front_page = () => {
                     </div>
                 </div>
 
-                <div className="single-service-box">
+                {/* <div className="single-service-box">
                     <TbReportAnalytics className="single-icon" />
 
                     <h3 className="single-box-header">Data collection</h3>
@@ -110,7 +112,7 @@ const Front_page = () => {
                         <FaArrowRight className="arrow_icon" />
                         <span className="text">Read More</span>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             <div className="service-bottom">
@@ -134,7 +136,7 @@ const Front_page = () => {
             <Blog />
             <FeedbackForm />
             <Testimonials />
-            <Footer/>
+            <Footer />
         </>
     );
 };
