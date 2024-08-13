@@ -271,13 +271,13 @@ const Navbar = () => {
   const learningCenter = (
     <Menu>
       <Menu.Item key="heading1">
-        <NavLink to="#">larn 1</NavLink>
+        <NavLink to="/StartUp_Task">Start Up Task</NavLink>
       </Menu.Item>
       <Menu.Item key="heading2">
-        <NavLink to="#">learn 2</NavLink>
+        <NavLink to="/Corporation_VS_LLC">Corporation Vs. LLC</NavLink>
       </Menu.Item>
       <Menu.Item key="heading3">
-        <NavLink to="#">learn 3</NavLink>
+        <NavLink to="/Benefits_of_Incorporating">Benefits of Incorporating</NavLink>
       </Menu.Item>
     </Menu>
   );

@@ -25,6 +25,9 @@ import UploadDocuments from './components/clientDashboard/clientInfo/UploadDocum
 import About_Ascend from './pages/Navbar_aboutus/About_Ascend.com/About_Ascend';
 import Corporate_Gurantee from './pages/Navbar_aboutus/Corporate Compilance Gurantee/Corporate_Gurantee';
 import Customer_review from './pages/Navbar_aboutus/Recent Customer Reviews/Customer_review';
+import Benefits_of_Incorporating from "./pages/Learning Center Navbar/Benefits of Incorporating/Benefits_of_Incorporating";
+import StartUp_Task from "./pages/Learning Center Navbar/Start-up Tasks/StartUp_Task";
+import Corporation_VS_LLC from "./pages/Learning Center Navbar/Corporation vs. LLC/Corporation_VS_LLC";
 
 const App = () => {
   return (
@@ -50,7 +53,14 @@ const App = () => {
             {/* Suman */}
             <Route path='/About_Ascend' element= { <About_Ascend/> }/> 
             <Route path='/Corporate_Gurantee' element= { <Corporate_Gurantee/> }/> 
-            <Route path='/Customer_review' element= { <Customer_review/> }/> 
+            <Route path='/Customer_review' element= { <Customer_review/> }/>
+
+            {/* learning navbar by suman */}
+            < Route path='/StartUp_Task' element ={ <StartUp_Task/> } />
+            < Route path='/Corporation_VS_LLC' element ={ <Corporation_VS_LLC/> } />
+            < Route path='/Benefits_of_Incorporating' element ={ <Benefits_of_Incorporating/> } />
+
+
 
             {/* Protected route */}
             <Route element={<ProtectedRoute />}>
