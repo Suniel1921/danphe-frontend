@@ -12,7 +12,6 @@
     object-position: top;
 }
 
-
 .image_over_paragraph {
     position: absolute; /* Positioning the text absolutely within the container */
     color: #003B5C;

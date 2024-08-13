@@ -279,6 +279,18 @@ const Navbar = () => {
       <Menu.Item key="heading3">
         <NavLink to="/Benefits_of_Incorporating">Benefits of Incorporating</NavLink>
       </Menu.Item>
+      <Menu.Item key="heading4">
+        <NavLink to="/Incorporation_101">Incorporation 101</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading5">
+        <NavLink to="/Industry_specific_information">Industry Specific Information</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading6">
+        <NavLink to="/Tax_filings">Tax filings</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading7">
+        <NavLink to="/State_guides">State Guides</NavLink>
+      </Menu.Item>
     </Menu>
   );
   const aboutUs = (
