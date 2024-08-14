@@ -298,6 +298,7 @@ const Navbar = () => {
   const learningCenter = (
     <Menu>
       <Menu.Item key="heading1">
+<<<<<<< HEAD
         <NavLink className="dropdownLink_heading" to="#">Startup Tasks</NavLink>
       </Menu.Item>
       <Menu.Item key="heading2">
@@ -314,19 +315,40 @@ const Navbar = () => {
       </Menu.Item>
       <Menu.Item key="heading3">
         <NavLink className="dropdownLink_heading" to="#">State Guide</NavLink>
+=======
+        <NavLink to="/StartUp_Task">Start Up Task</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading2">
+        <NavLink to="/Corporation_VS_LLC">Corporation Vs. LLC</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading3">
+        <NavLink to="/Benefits_of_Incorporating">Benefits of Incorporating</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading4">
+        <NavLink to="/Incorporation_101">Incorporation 101</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading5">
+        <NavLink to="/Industry_specific_information">Industry Specific Information</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading6">
+        <NavLink to="/Tax_filings">Tax filings</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading7">
+        <NavLink to="/State_guides">State Guides</NavLink>
+>>>>>>> a20daa49b4260944282287a8d4ddfd51cf48c133
       </Menu.Item>
     </Menu>
   );
   const aboutUs = (
     <Menu>
       <Menu.Item key="heading1">
-        <NavLink to="/contact">about 1</NavLink>
+        <NavLink to="/About_Ascend">About Ascend.com</NavLink>
       </Menu.Item>
       <Menu.Item key="heading2">
-        <NavLink to="#">about 2</NavLink>
+        <NavLink to="/Corporate_Gurantee">Corporate Compilance Gurantee</NavLink>
       </Menu.Item>
       <Menu.Item key="heading3">
-        <NavLink to="#">about 3</NavLink>
+        <NavLink to="/Customer_review">Recent Customer Review</NavLink>
       </Menu.Item>
     </Menu>
   );

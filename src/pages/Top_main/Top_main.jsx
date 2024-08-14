@@ -204,12 +204,12 @@ const Top_main = () => {
         <div className='main_background'>
           <div className='main_background_left'>
             <h1 className='Main_heading'>
-              Creating the best <br />
-              digital Solutions for <br />
-              your business.
+              Making business <br/>easier.
             </h1>
             <p className='main_paragraph'>
-              We are in the business of transformation, known for our focus on<br /> commitment to achieving results.
+            Ready to form an LLC, Corporation, or Non-Profit? At Ascend, we provide everything you need to start and maintain your business.
+
+
             </p>
             <div className='Button_top'>
               <Button_top />

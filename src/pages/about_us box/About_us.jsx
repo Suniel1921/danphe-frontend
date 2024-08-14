@@ -122,35 +122,33 @@ const About_us = () => {
           <p className="about">ABOUT US</p>
         </div>
         <h2 className='right_h2'>
-          We Provide Professional
-          <br />
-          Advice to Businesses.
+        Pick a business type.
         </h2>
         <p className='right_p'>
-          We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences, and print materials. Install any demo, plugin or template in a matter of seconds.
+        Decide how you want to incorporate and register your company.
         </p>
         {/* Accordion Components */}
         <Accordion
-          title="Learn More 1"
-          content="Here is some additional information that expands when you click the accordion."
+          title="Limited liability company (LLC)"
+          content=" The perfect first step. An LLC is a great way to start a new company. Incorporating your business this way protects your personal assets, and gives your business legitimacy. "
           isOpen={openAccordionIndex === 0} // Only open if this accordion is the active one
           onClick={() => handleAccordionClick(0)}
         />
         <Accordion
-          title="Learn More 2"
-          content="Here is some additional information that expands when you click the accordion."
+          title="C Corporation (C corp)"
+          content="Hello, Wall Street. In addition to personal asset protection, the C corp structure also creates unlimited growth potential. Once you're incorporated, you can issue any class of stock to any number of investors."
           isOpen={openAccordionIndex === 1} // Only open if this accordion is the active one
           onClick={() => handleAccordionClick(1)}
         />
         <Accordion
-          title="Learn More 3"
-          content="Here is some additional information that expands when you click the accordion."
+          title="S Corporation (S corp)"
+          content="One big perk, but lots of strings. This structure exempts your incorporated company from federal income taxes, but at the cost of additional rules and limitations."
           isOpen={openAccordionIndex === 2} // Only open if this accordion is the active one
           onClick={() => handleAccordionClick(2)}
         />
         <Accordion
-          title="Learn More 4"
-          content="Here is some additional information that expands when you click the accordion."
+          title="Nonprofit"
+          content="You know who you are. When you're in business to do good, a nonprofit designation offers rock-solid personal asset protection, tax benefits, and more."
           isOpen={openAccordionIndex === 3} // Only open if this accordion is the active one
           onClick={() => handleAccordionClick(3)}
         />
