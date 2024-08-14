@@ -6,7 +6,7 @@
 // import { IoReorderThreeOutline, IoCloseOutline } from 'react-icons/io5';
 // import { useAuthGlobally } from '../../contexts/AuthContext';
 // import { useCartGlobally } from '../../contexts/cartContext';
-// import { useTheme } from '../../contexts/ThemeContext'; // Import useTheme
+// import { useTheme } from '../../contexts/ThemeContext';
 // import toast from 'react-hot-toast';
 // import axios from 'axios';
 // import './navbar.css';
@@ -17,7 +17,7 @@
 //   const [auth, setAuth] = useAuthGlobally();
 //   const { cart } = useCartGlobally();
 //   const [isSticky, setIsSticky] = useState(false);
-//   const { theme, toggleTheme } = useTheme(); // Get theme and toggleTheme
+//   const { theme, toggleTheme } = useTheme();
 
 //   const toggleMenu = () => {
 //     setIsMenuOpen(!isMenuOpen);
@@ -74,6 +74,20 @@
 //     </Menu>
 //   );
 
+//   const businessMenu = (
+//     <Menu>
+//       <Menu.Item key="heading1">
+//         <NavLink to="#">Heading 1</NavLink>
+//       </Menu.Item>
+//       <Menu.Item key="heading2">
+//         <NavLink to="#">Heading 2</NavLink>
+//       </Menu.Item>
+//       <Menu.Item key="heading3">
+//         <NavLink to="#">Heading 3</NavLink>
+//       </Menu.Item>
+//     </Menu>
+//   );
+
 //   useEffect(() => {
 //     const handleScroll = () => {
 //       setIsSticky(window.scrollY > 50);
@@ -87,76 +101,78 @@
 
 //   return (
 //     <>
-//     <div className={`navbar_container ${isSticky ? 'navbar_sticky' : ''}`}>
-//       <div className='navbarlogo'>
-//         <NavLink to={'/'}><img src='/img/logo.png' alt="Logo" /></NavLink>
-//       </div>
-//       <IoReorderThreeOutline className={`menu_icon ${isSticky ? 'sticky_icon' : ''}`} onClick={toggleMenu} />
-//       <div className={`mobile_menu ${isMenuOpen ? 'active mobile_menu_open' : ''}`}>
-//         <div className="mobile_menu_header">
-//           <IoCloseOutline className="close_icon" onClick={closeMenu} />
+//       <div className={`navbar_container ${isSticky ? 'navbar_sticky' : ''}`}>
+//         <div className='navbarlogo'>
+//           <NavLink to={'/'}><img src='/img/logo.png' alt="Logo" /></NavLink>
 //         </div>
-//         <ul>
-//           <li><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
-//           <li><NavLink to="/services" onClick={closeMenu}>Services</NavLink></li>
-//           <li><NavLink to="/page" onClick={closeMenu}>Page</NavLink></li>
-//           <li><NavLink to="/shop" onClick={closeMenu}>Shop</NavLink></li>
-//           <li><NavLink to="/blog" onClick={closeMenu}>Blog</NavLink></li>
-//           <li><NavLink to="/portfolio" onClick={closeMenu}>Portfolio</NavLink></li>
-//         </ul>
-//       </div>
-//       <div className='items_navbar'>
-//         <ul>
-//           <li><NavLink >Starting a Business</NavLink></li> 
-//           <li><NavLink >Maintaining a Business</NavLink></li> 
-//           <li><NavLink >Learning Center</NavLink></li> 
-//           <li><NavLink >About Us</NavLink></li>
-//         </ul>
-//       </div>
-//       <div className='navbar_social'>
-//         <div className='navbar_social_icon'>
-//           <a className={`socialContainer containerOne ${isSticky ? 'sticky_icon' : ''}`} href="#">
-//             <FaInstagram className={`socialSvg ${isSticky ? 'sticky_icon' : ''}`} />
-//           </a>
-//           <a className={`socialContainer containerTwo ${isSticky ? 'sticky_icon' : ''}`} href="#">
-//             <FaTwitter className={`socialSvg ${isSticky ? 'sticky_icon' : ''}`} />
-//           </a>
-//           <a className={`socialContainer containerThree ${isSticky ? 'sticky_icon' : ''}`} href="#">
-//             <FaLinkedin className={`socialSvg ${isSticky ? 'sticky_icon' : ''}`} />
-//           </a>
-//           <a className={`socialContainer containerFour ${isSticky ? 'sticky_icon' : ''}`} href="#">
-//             <FaWhatsapp className={`socialSvg ${isSticky ? 'sticky_icon' : ''}`} />
-//           </a>
+//         <IoReorderThreeOutline className={`menu_icon ${isSticky ? 'sticky_icon' : ''}`} onClick={toggleMenu} />
+//         <div className={`mobile_menu ${isMenuOpen ? 'active mobile_menu_open' : ''}`}>
+//           <div className="mobile_menu_header">
+//             <IoCloseOutline className="close_icon" onClick={closeMenu} />
+//           </div>
+//           <ul>
+//             <li><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
+//             <li><NavLink to="/services" onClick={closeMenu}>Services</NavLink></li>
+//             <li><NavLink to="/page" onClick={closeMenu}>Page</NavLink></li>
+//             <li><NavLink to="/shop" onClick={closeMenu}>Shop</NavLink></li>
+//             <li><NavLink to="/blog" onClick={closeMenu}>Blog</NavLink></li>
+//             <li><NavLink to="/portfolio" onClick={closeMenu}>Portfolio</NavLink></li>
+//           </ul>
+//         </div>
+//         <div className='items_navbar'>
+//           <ul>
+//             <li>
+//               <Dropdown overlay={businessMenu} trigger={['hover']} placement="bottom">
+//                 <NavLink to="#">Starting a Business</NavLink>
+//               </Dropdown>
+//             </li>
+//             <li><NavLink>Maintaining a Business</NavLink></li>
+//             <li><NavLink>Learning Center</NavLink></li>
+//             <li><NavLink>About Us</NavLink></li>
+//           </ul>
+//         </div>
+//         <div className='navbar_social'>
+//           <div className='navbar_social_icon'>
+//             <a className={`socialContainer containerOne ${isSticky ? 'sticky_icon' : ''}`} href="#">
+//               <FaInstagram className={`socialSvg ${isSticky ? 'sticky_icon' : ''}`} />
+//             </a>
+//             <a className={`socialContainer containerTwo ${isSticky ? 'sticky_icon' : ''}`} href="#">
+//               <FaTwitter className={`socialSvg ${isSticky ? 'sticky_icon' : ''}`} />
+//             </a>
+//             <a className={`socialContainer containerThree ${isSticky ? 'sticky_icon' : ''}`} href="#">
+//               <FaLinkedin className={`socialSvg ${isSticky ? 'sticky_icon' : ''}`} />
+//             </a>
+//             <a className={`socialContainer containerFour ${isSticky ? 'sticky_icon' : ''}`} href="#">
+//               <FaWhatsapp className={`socialSvg ${isSticky ? 'sticky_icon' : ''}`} />
+//             </a>
+//           </div>
+//         </div>
+//         <div className="banner">
+//           <Dropdown overlay={userMenu} placement="bottomRight">
+//             <NavLink to="#" aria-label="User Menu">
+//               <FaUserAlt className={`icons ${isSticky ? 'sticky_icon' : ''}`} />
+//             </NavLink>
+//           </Dropdown>
+//           <Dropdown overlay={messageMenu} placement="bottomRight">
+//             <NavLink to="#" aria-label="Message Menu">
+//               <AiFillMessage className={`icons ${isSticky ? 'sticky_icon' : ''}`} />
+//             </NavLink>
+//           </Dropdown>
+//           <Badge count={cart.length} color="error">
+//             <NavLink to="/cart" aria-label="Shopping Cart">
+//               <FaShoppingCart className={`icons ${isSticky ? 'sticky_icon' : ''}`} />
+//             </NavLink>
+//           </Badge>
+//           {/* <button className="theme-toggle" onClick={toggleTheme}>
+//             {theme === 'light' ? <FaMoon /> : <FaSun />}
+//           </button> */}
 //         </div>
 //       </div>
-//       <div className="banner">
-//         <Dropdown overlay={userMenu} placement="bottomRight">
-//           <NavLink to="#" aria-label="User Menu">
-//             <FaUserAlt className={`icons ${isSticky ? 'sticky_icon' : ''}`} />
-//           </NavLink>
-//         </Dropdown>
-//         <Dropdown overlay={messageMenu} placement="bottomRight">
-//           <NavLink to="#" aria-label="Message Menu">
-//             <AiFillMessage className={`icons ${isSticky ? 'sticky_icon' : ''}`} />
-//           </NavLink>
-//         </Dropdown>
-//         <Badge count={cart.length} color="error">
-//           <NavLink to="/cart" aria-label="Shopping Cart">
-//             <FaShoppingCart className={`icons ${isSticky ? 'sticky_icon' : ''}`} />
-//           </NavLink>
-//         </Badge>
-//         {/* <button className="theme-toggle" onClick={toggleTheme}>
-//           {theme === 'light' ? <FaMoon /> : <FaSun />}
-//         </button> */}
-//       </div>
-
-//     </div>
 //     </>
 //   );
 // };
 
 // export default Navbar;
-
 
 
 
@@ -245,39 +261,59 @@ const Navbar = () => {
   const businessMenu = (
     <Menu>
       <Menu.Item key="heading1">
-        <NavLink to="#">Heading 1</NavLink>
+        <NavLink className='dropdownLink_heading' to="/starting-business">Starting a Business</NavLink>
       </Menu.Item>
       <Menu.Item key="heading2">
-        <NavLink to="#">Heading 2</NavLink>
+        <NavLink className='dropdownLink_heading' to="/maintaining-business">Maintaining a Business</NavLink>
       </Menu.Item>
       <Menu.Item key="heading3">
-        <NavLink to="#">Heading 3</NavLink>
+        <NavLink className='dropdownLink_heading' to="/learning-center">Learning Center</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading4">
+        <NavLink className='dropdownLink_heading' to="/about-us">About Us</NavLink>
       </Menu.Item>
     </Menu>
   );
+  
+  
   const maintainingBusiness = (
     <Menu>
       <Menu.Item key="heading1">
-        <NavLink to="#">list 1</NavLink>
+        <NavLink className= "dropdownLink_heading" to="#">Bylaws & Operating Aggrements</NavLink>
       </Menu.Item>
       <Menu.Item key="heading2">
-        <NavLink to="#">list 2</NavLink>
+        <NavLink className= "dropdownLink_heading" to="#">Business Licenses</NavLink>
       </Menu.Item>
       <Menu.Item key="heading3">
-        <NavLink to="#">list 3</NavLink>
+        <NavLink className= "dropdownLink_heading" to="#">Annual Report</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading3">
+        <NavLink className= "dropdownLink_heading" to="#">Certifiacte of Good Standing</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading3">
+        <NavLink className= "dropdownLink_heading" to="#">LLC Tax Status Election (form 8832)</NavLink>
       </Menu.Item>
     </Menu>
   );
   const learningCenter = (
     <Menu>
       <Menu.Item key="heading1">
-        <NavLink to="#">larn 1</NavLink>
+        <NavLink className="dropdownLink_heading" to="#">Startup Tasks</NavLink>
       </Menu.Item>
       <Menu.Item key="heading2">
-        <NavLink to="#">learn 2</NavLink>
+        <NavLink className="dropdownLink_heading" to="#">Corporation vs LLC</NavLink>
       </Menu.Item>
       <Menu.Item key="heading3">
-        <NavLink to="#">learn 3</NavLink>
+        <NavLink className="dropdownLink_heading" to="#">Benefits of Incorporating</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading3">
+        <NavLink className="dropdownLink_heading" to="#">eBooks</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading3">
+        <NavLink className="dropdownLink_heading" to="#">Incorporation 101</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading3">
+        <NavLink className="dropdownLink_heading" to="#">State Guide</NavLink>
       </Menu.Item>
     </Menu>
   );
@@ -333,7 +369,7 @@ const Navbar = () => {
            
             <li>
               <Dropdown overlay={learningCenter} trigger={['hover']} placement="bottom">
-                <NavLink >LearningCenter</NavLink>
+                <NavLink >Learning Center</NavLink>
               </Dropdown>
             </li>
             <li>
@@ -385,3 +421,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

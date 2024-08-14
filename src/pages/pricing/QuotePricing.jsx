@@ -31,6 +31,7 @@ const QuotePricing = () => {
 
   // Render the component
   return (
+    <>
     <div className="container">
       <div className="quote-main-container">
         <div className="quote-full-container">
@@ -70,6 +71,7 @@ const QuotePricing = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

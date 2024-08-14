@@ -7,12 +7,12 @@ const Button_top = () => {
     <button className="hover-button">
       <div className="hover-button__div">
         <span>
-          <p>Our Services</p>
+          <p>Get Started</p>
         </span>
       </div>
       <div className="hover-button__div">
         <span>
-          <Link to={'/quote-pricing'}>Our Service</Link>
+          <Link to={'/quote-pricing'}>Get Started</Link>
          
         </span>
 

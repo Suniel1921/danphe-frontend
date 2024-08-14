@@ -1,19 +1,48 @@
-/* Navbar Container */
+.dropdownLink_heading{
+  color: var(--cherryRed) !important;
+  font-size: 13px !important;
+}
+
+
+
 .navbar_container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent; /* Initial background color */
+  background-color: transparent; 
   margin: auto;
-  padding: 0 20px; /* Add some padding for better spacing */
-  position: fixed; /* Make the navbar stick to the top */
+  padding: 0 20px; 
+  position: fixed; 
   top: 0;
   left: 0;
   right: 0;
-  transition: background-color 0.3s ease; /* Smooth background color transition */
-  z-index: 1000; /* Ensure the navbar is above other content */
+  transition: background-color 0.3s ease; 
+  z-index: 1000; 
 }
+
+
+
+/* .navbar_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  margin: auto;
+  padding: 0 20px;
+  position: sticky; 
+  top: 0;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+} */
+
+
+
+
+
+
+
 
 /* Navbar Sticky Background Color */
 .navbar_sticky {

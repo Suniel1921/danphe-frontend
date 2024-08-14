@@ -195,11 +195,11 @@ const Top_main = () => {
 
   return (
     <>
+    {/* <Navbar />  */}
       <div id="circle-border">
-        <div id="custom-cursor"></div> {/* Red Dot Cursor */}
+        <div id="custom-cursor"></div> {/* for Red Dot Cursor */}
       </div>
       <div className="test">
-        <Navbar /> 
       
         <div className='main_background'>
           <div className='main_background_left'>
