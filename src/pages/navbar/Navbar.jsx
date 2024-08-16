@@ -319,6 +319,9 @@ const Navbar = () => {
       <Menu.Item key="heading7">
         <NavLink className='dropdownLink_heading' to="/State_guides">State Guides</NavLink>
       </Menu.Item>
+      <Menu.Item key="heading8">
+        <NavLink className='dropdownLink_heading' to="/Learningcenter">Learning Center</NavLink>
+      </Menu.Item>
     </Menu>
   );
   const aboutUs = (

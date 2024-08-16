@@ -31,6 +31,7 @@ import Incorporation_101 from "./pages/Learning Center Navbar/Incorporation 101/
 import Industry_specific_information from "./pages/Learning Center Navbar/Industry Specific Information/Industry_specific_information";
 import Tax_filings from "./pages/Learning Center Navbar/Tax Filings & Deducations/Tax_filings";
 import State_guides from "./pages/Learning Center Navbar/State Guides/State_guides";
+import Learningcenter from "./pages/Learning Center Navbar/Learning-center/Learningcenter";
 
 const App = () => {
   return (
@@ -65,6 +66,7 @@ const App = () => {
               <Route path='/Industry_specific_information' element={<Industry_specific_information />} />
               <Route path='/Tax_filings' element={<Tax_filings />} />
               <Route path='/State_guides' element={<State_guides />} />
+              <Route path='/Learningcenter' element={<Learningcenter />} />
 
               {/* Protected Routes */}
               <Route element={<ProtectedRoute />}>

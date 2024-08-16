@@ -19,6 +19,7 @@ const Corporation_VS_LLC = () => {
           </p>
           <table className="comparison-table">
             <thead>
+              
               <tr>
                 <th>Advantages of an LLC</th>
                 <th>Disadvantages of an LLC</th>

@@ -16,6 +16,7 @@ const StartUp_Task = () => {
         </p>
       </div>
 
+
       .
       <div className="bottom_startup">
         {/*  left middle div */}
