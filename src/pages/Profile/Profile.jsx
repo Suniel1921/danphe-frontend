@@ -77,8 +77,8 @@ const ProfileCard = ({ name, title, imageUrl }) => {
         <div className="Profile-card">
             <img  src={imageUrl} alt={name} className="Profile-card-image" />
             <div className='Profile_card_text'>
-                <h3>{name}</h3>
-                <h5>{title}</h5>
+                {/* <h3>{name}</h3> */}
+                {/* <h5>{title}</h5> */}
             </div>
         </div>
     );

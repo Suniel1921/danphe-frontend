@@ -1,6 +1,5 @@
 import React from 'react'
 import "./StartUp_Task.css";
-import hero_image from "../../../../public/learning about/hero-image-planning.jpg"
 import Start_grid from './Grid/Start_grid';
 import ExpandableList from './Expand/ExpandableList';
 import Expandablelist2 from './Expandable list 2/ExpandableList2';
@@ -11,7 +10,7 @@ const StartUp_Task = () => {
   return (
     <div className='start_up_main_container'>
       <div className='top_main_hero_section'>
-        <img src={hero_image} alt="" className='top_Start_image' />
+        <img src="/img/hero-image-planning.jpg" alt="" className='top_Start_image' />
         <p className='image_over_paragraph_start'>
           Steps to Starting a Small Business.
         </p>

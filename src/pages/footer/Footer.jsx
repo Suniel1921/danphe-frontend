@@ -9,7 +9,7 @@ const Footer = () => {
     
       <div className="footer-container">
         <div className="footer-section about">
-          <h2>Saga.</h2>
+          <h2>ASCEND</h2>
           <p>
             We focus on the needs of small to middle market businesses to improve
             and grow their return.
@@ -41,21 +41,20 @@ const Footer = () => {
         </div>
 
         <div className="footer-section services">
-          <h2>Services</h2>
+          <h2>Get Started </h2>
           <ul>
-            <li><a href="#">Homepage</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#">Forming an LLC</a></li>
+            <li><a href="#">Incorporate in Delaware</a></li>
+            <li><a href="#">Registered Agent Service</a></li>
           </ul>
         </div>
 
         <div className="footer-section company">
-          <h2>Company</h2>
+          <h2>Lean More</h2>
           <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Our Consultants</a></li>
+            <li><a href="#">Benefits of Incorporating</a></li>
+            <li><a href="#">Incorporate 101</a></li>
+            <li><a href="#">LLC vs. Corporation</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
         </div>

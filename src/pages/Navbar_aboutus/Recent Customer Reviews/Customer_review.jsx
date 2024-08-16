@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Customer_review.css";
-import reviewImage from "../../../../public/About_us/hero-image-quote-marks.jpg";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { RiDoubleQuotesR } from "react-icons/ri";
 
@@ -18,7 +17,7 @@ const Customer_review = () => {
   return (
     <div className='recent_customer_review'>
       <div className='recent_customer_review_image'>
-        <img src={reviewImage} alt="Customer Review" className='recent_image' />
+        <img src="/img/hero-image-quote-marks.jpg" alt="Customer Review" className='recent_image' />
         <p className='Recent_customer_paragraph'>
           Recent Customer Review
           

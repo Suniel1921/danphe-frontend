@@ -100,7 +100,7 @@
 }
 
 .Profile_card_text {
-    background: #2b3a57;
+    /* background: #2b3a57; */
     color: white;
     text-align: center;
     border-radius: 10px;
@@ -114,10 +114,10 @@
     z-index: 1;
 }
 
-.Profile-card:hover .Profile_card_text {
+/* .Profile-card:hover .Profile_card_text {
     transform: translateY(-20px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
+} */
 
 .Profile-card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);

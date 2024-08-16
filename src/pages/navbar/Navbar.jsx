@@ -182,6 +182,7 @@
 
 
 
+
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaShoppingCart, FaUserAlt, FaInstagram, FaTwitter, FaLinkedin, FaWhatsapp, FaMoon, FaSun } from 'react-icons/fa';
@@ -224,24 +225,24 @@ const Navbar = () => {
       {auth?.user ? (
         <>
           <Menu.Item key="greeting">
-            <h2 style={{ textAlign: 'center', textTransform: 'capitalize' }}>
-              Hi <span className="waving-hand">👋</span> {auth.user.name}
-            </h2>
+            <h4 style={{ textAlign: 'center', textTransform: 'capitalize' }}>
+              Hi <span className="waving-hand ">👋</span> {auth.user.name}
+            </h4>
             <hr />
           </Menu.Item>
           <Menu.Item key="dashboard">
-            <NavLink to="/client-dashboard">Client Dashboard</NavLink>
+            <NavLink className='dropdownLink_heading' to="/client-dashboard">Client Dashboard</NavLink>
           </Menu.Item>
           <Menu.Item key="update-document">
-            <NavLink to="/update-document">Update Document</NavLink>
+            <NavLink className='dropdownLink_heading' to="/update-document">Update Document</NavLink>
           </Menu.Item>
           <Menu.Item key="logout">
-            <NavLink onClick={handleLogout}>Logout</NavLink>
+            <NavLink className='dropdownLink_heading' onClick={handleLogout}>Logout</NavLink>
           </Menu.Item>
         </>
       ) : (
         <Menu.Item key="login">
-          <NavLink to="/login">Client Login</NavLink>
+          <NavLink className='dropdownLink_heading' to="/login">Client Login</NavLink>
         </Menu.Item>
       )}
     </Menu>
@@ -250,10 +251,10 @@ const Navbar = () => {
   const messageMenu = (
     <Menu>
       <Menu.Item key="new-order">
-        <NavLink to="/new-order">New Order</NavLink>
+        <NavLink className='dropdownLink_heading' to="/new-order">New Order</NavLink>
       </Menu.Item>
       <Menu.Item key="existing-order">
-        <NavLink to="/existing-order">Existing Order</NavLink>
+        <NavLink className='dropdownLink_heading' to="/existing-order">Existing Order</NavLink>
       </Menu.Item>
     </Menu>
   );
@@ -287,10 +288,10 @@ const Navbar = () => {
       <Menu.Item key="heading3">
         <NavLink className= "dropdownLink_heading" to="#">Annual Report</NavLink>
       </Menu.Item>
-      <Menu.Item key="heading3">
+      <Menu.Item key="heading4">
         <NavLink className= "dropdownLink_heading" to="#">Certifiacte of Good Standing</NavLink>
       </Menu.Item>
-      <Menu.Item key="heading3">
+      <Menu.Item key="heading5">
         <NavLink className= "dropdownLink_heading" to="#">LLC Tax Status Election (form 8832)</NavLink>
       </Menu.Item>
     </Menu>
@@ -298,57 +299,38 @@ const Navbar = () => {
   const learningCenter = (
     <Menu>
       <Menu.Item key="heading1">
-<<<<<<< HEAD
-        <NavLink className="dropdownLink_heading" to="#">Startup Tasks</NavLink>
+        <NavLink className='dropdownLink_heading' to="/StartUp_Task">Start Up Task</NavLink>
       </Menu.Item>
       <Menu.Item key="heading2">
-        <NavLink className="dropdownLink_heading" to="#">Corporation vs LLC</NavLink>
+        <NavLink className='dropdownLink_heading' to="/Corporation_VS_LLC">Corporation Vs. LLC</NavLink>
       </Menu.Item>
       <Menu.Item key="heading3">
-        <NavLink className="dropdownLink_heading" to="#">Benefits of Incorporating</NavLink>
-      </Menu.Item>
-      <Menu.Item key="heading3">
-        <NavLink className="dropdownLink_heading" to="#">eBooks</NavLink>
-      </Menu.Item>
-      <Menu.Item key="heading3">
-        <NavLink className="dropdownLink_heading" to="#">Incorporation 101</NavLink>
-      </Menu.Item>
-      <Menu.Item key="heading3">
-        <NavLink className="dropdownLink_heading" to="#">State Guide</NavLink>
-=======
-        <NavLink to="/StartUp_Task">Start Up Task</NavLink>
-      </Menu.Item>
-      <Menu.Item key="heading2">
-        <NavLink to="/Corporation_VS_LLC">Corporation Vs. LLC</NavLink>
-      </Menu.Item>
-      <Menu.Item key="heading3">
-        <NavLink to="/Benefits_of_Incorporating">Benefits of Incorporating</NavLink>
+        <NavLink className='dropdownLink_heading' to="/Benefits_of_Incorporating">Benefits of Incorporating</NavLink>
       </Menu.Item>
       <Menu.Item key="heading4">
-        <NavLink to="/Incorporation_101">Incorporation 101</NavLink>
+        <NavLink className='dropdownLink_heading' to="/Incorporation_101">Incorporation 101</NavLink>
       </Menu.Item>
       <Menu.Item key="heading5">
-        <NavLink to="/Industry_specific_information">Industry Specific Information</NavLink>
+        <NavLink className='dropdownLink_heading' to="/Industry_specific_information">Industry Specific Information</NavLink>
       </Menu.Item>
       <Menu.Item key="heading6">
-        <NavLink to="/Tax_filings">Tax filings</NavLink>
+        <NavLink className='dropdownLink_heading' to="/Tax_filings">Tax filings</NavLink>
       </Menu.Item>
       <Menu.Item key="heading7">
-        <NavLink to="/State_guides">State Guides</NavLink>
->>>>>>> a20daa49b4260944282287a8d4ddfd51cf48c133
+        <NavLink className='dropdownLink_heading' to="/State_guides">State Guides</NavLink>
       </Menu.Item>
     </Menu>
   );
   const aboutUs = (
     <Menu>
       <Menu.Item key="heading1">
-        <NavLink to="/About_Ascend">About Ascend.com</NavLink>
+        <NavLink className='dropdownLink_heading' to="/About_Ascend">About Ascend.com</NavLink>
       </Menu.Item>
       <Menu.Item key="heading2">
-        <NavLink to="/Corporate_Gurantee">Corporate Compilance Gurantee</NavLink>
+        <NavLink className='dropdownLink_heading' to="/Corporate_Gurantee">Corporate Compilance Gurantee</NavLink>
       </Menu.Item>
       <Menu.Item key="heading3">
-        <NavLink to="/Customer_review">Recent Customer Review</NavLink>
+        <NavLink className='dropdownLink_heading' to="/Customer_review">Recent Customer Review</NavLink>
       </Menu.Item>
     </Menu>
   );
