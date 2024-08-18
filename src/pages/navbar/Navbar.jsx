@@ -262,16 +262,37 @@ const Navbar = () => {
   const businessMenu = (
     <Menu>
       <Menu.Item key="heading1">
-        <NavLink className='dropdownLink_heading' to="/starting-business">Starting a Business</NavLink>
+        <NavLink className='dropdownLink_heading' to="/Benefits_of_Incorporating">Benefits of Incorporating</NavLink>
       </Menu.Item>
       <Menu.Item key="heading2">
-        <NavLink className='dropdownLink_heading' to="/maintaining-business">Maintaining a Business</NavLink>
+        <NavLink className='dropdownLink_heading' to="/StartUp_Task">Start Up Tasks</NavLink>
       </Menu.Item>
       <Menu.Item key="heading3">
-        <NavLink className='dropdownLink_heading' to="/learning-center">Learning Center</NavLink>
+        <NavLink className='dropdownLink_heading' to="/Registered_Agent_Service">Registered Agent Service</NavLink>
       </Menu.Item>
       <Menu.Item key="heading4">
-        <NavLink className='dropdownLink_heading' to="/about-us">About Us</NavLink>
+        <NavLink className='dropdownLink_heading' to="/Employer_ID_Number">Employer ID Number</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading5">
+        <NavLink className='dropdownLink_heading' to="/Incorporate_In_Welfare">Incorporate In Welfare</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading6">
+        <NavLink className='dropdownLink_heading' to="/Limited_Liability_Company">Limited Liability Company</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading7">
+        <NavLink className='dropdownLink_heading' to="/S_Corporation">S Corporation</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading8">
+        <NavLink className='dropdownLink_heading' to="/C_Corporation">C Corporation</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading9">
+        <NavLink className='dropdownLink_heading' to="/None_Profit_Corporation">None Profit Corporation</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading10">
+        <NavLink className='dropdownLink_heading' to="/Corporation_VS_LLC">Corporation Vs. LLC</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading11">
+        <NavLink className='dropdownLink_heading' to="/Starting_A_Business">More</NavLink>
       </Menu.Item>
     </Menu>
   );

@@ -32,6 +32,15 @@ import Industry_specific_information from "./pages/Learning Center Navbar/Indust
 import Tax_filings from "./pages/Learning Center Navbar/Tax Filings & Deducations/Tax_filings";
 import State_guides from "./pages/Learning Center Navbar/State Guides/State_guides";
 import Learningcenter from "./pages/Learning Center Navbar/Learning-center/Learningcenter";
+import Starting_A_Business from "./pages/Starting Business Navbar/Starting_A_Business/Starting_A_Business";
+import None_Profit_Corporation from "./pages/Starting Business Navbar/None_Profit_Corporation/None_Profit_Corporation";
+import C_Corporation from "./pages/Starting Business Navbar/C_Corporation/C_Corporation";
+import S_Corporation from "./pages/Starting Business Navbar/S_Corporation/S_Corporation";
+import Limited_Liability_Company from "./pages/Starting Business Navbar/Limited_Liability_Company/Limited_Liability_Company";
+import Incorporate_In_Welfare from "./pages/Starting Business Navbar/Incorporate_In_Welfare/Incorporate_In_Welfare";
+import Employer_ID_Number from "./pages/Starting Business Navbar/Employer_ID_Number/Employer_ID_Number";
+import Registered_Agent_Service from "./pages/Starting Business Navbar/Registered_Agent_Service/Registered_Agent_Service";
+
 
 const App = () => {
   return (
@@ -67,6 +76,19 @@ const App = () => {
               <Route path='/Tax_filings' element={<Tax_filings />} />
               <Route path='/State_guides' element={<State_guides />} />
               <Route path='/Learningcenter' element={<Learningcenter />} />
+
+
+
+              {/* starting a business navbar */}
+              <Route path='/Registered_Agent_Service' element={ <Registered_Agent_Service/> } />
+              <Route path='/Employer_ID_Number' element={ <Employer_ID_Number/> } />
+              <Route path='/Incorporate_In_Welfare' element={ <Incorporate_In_Welfare/> } />
+              <Route path='/Limited_Liability_Company' element={ <Limited_Liability_Company/> } />
+              <Route path='/S_Corporation' element={ <S_Corporation/> } />
+              <Route path='/C_Corporation' element={ <C_Corporation/> } />
+              <Route path='/None_Profit_Corporation' element={ <None_Profit_Corporation/> } />
+              <Route path='/Starting_A_Business' element={ <Starting_A_Business/> } />
+
 
               {/* Protected Routes */}
               <Route element={<ProtectedRoute />}>
