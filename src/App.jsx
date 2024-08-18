@@ -42,6 +42,21 @@ import Employer_ID_Number from "./pages/Starting Business Navbar/Employer_ID_Num
 import Registered_Agent_Service from "./pages/Starting Business Navbar/Registered_Agent_Service/Registered_Agent_Service";
 
 
+import Scrop_Election from "./pages/Maintaining_A_BUsiness Navbar/Scrop Election (from 2553)/Scrop_Election"
+import Annual_report from "./pages/Maintaining_A_BUsiness Navbar/Annual report/Annual_report"
+import Business_Lisences from "./pages/Maintaining_A_BUsiness Navbar/Business Lisences/Business_Lisences"
+import By_Laws_operating_Agreements from "./pages/Maintaining_A_BUsiness Navbar/By Laws & operating Agreements/By_Laws_operating_Agreements"
+import Certificate_of_Good_Standing from "./pages/Maintaining_A_BUsiness Navbar/Certificate of Good Standing/Certificate_of_Good_Standing"
+import DBA_Business_Name from "./pages/Maintaining_A_BUsiness Navbar/DBA_Business Name/DBA_Business_Name"
+import LLC_Tax_Status_Election from "./pages/Maintaining_A_BUsiness Navbar/LLC Tax Status Election (form 8832)/LLC_Tax_Status_Election"
+import Make_a_Payment from "./pages/Maintaining_A_BUsiness Navbar/Make a Payment/Make_a_Payment"
+import Maintaining_a_Business from "./pages/Maintaining_A_BUsiness Navbar/More/Maintaining_a_Business"
+import NonProfit_501_Status from "./pages/Maintaining_A_BUsiness Navbar/NonProfit 501 (C) Status/NonProfit_501_Status"
+import Register_in_Additional_States from "./pages/Maintaining_A_BUsiness Navbar/Register in Additional States/Register_in_Additional_States"
+
+
+
+
 const App = () => {
   return (
     <>
@@ -89,6 +104,20 @@ const App = () => {
               <Route path='/None_Profit_Corporation' element={ <None_Profit_Corporation/> } />
               <Route path='/Starting_A_Business' element={ <Starting_A_Business/> } />
 
+
+
+              {/* Maintaining a business navbar */}
+              <Route path='/Scrop_Election' element={ <Scrop_Election/> } />
+              <Route path='/Annual_report' element={ <Annual_report/> } />
+              <Route path='/Business_Lisences' element={ <Business_Lisences/> } />
+              <Route path='/By_Laws_operating_Agreements' element={ <By_Laws_operating_Agreements/> } />
+              <Route path='/Certificate_of_Good_Standing' element={ <Certificate_of_Good_Standing/> } />
+              <Route path='/DBA_Business_Name' element={ <DBA_Business_Name/> } />
+              <Route path='/LLC_Tax_Status_Election' element={ <LLC_Tax_Status_Election/> } />
+              <Route path='/Make_a_Payment' element={ <Make_a_Payment/> } />
+              <Route path='/Maintaining_a_Business' element={ <Maintaining_a_Business/> } />
+              <Route path='/NonProfit_501_Status' element={ <NonProfit_501_Status/> } />
+              <Route path='/Register_in_Additional_States' element={ <Register_in_Additional_States/> } />
 
               {/* Protected Routes */}
               <Route element={<ProtectedRoute />}>

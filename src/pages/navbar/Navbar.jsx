@@ -301,19 +301,37 @@ const Navbar = () => {
   const maintainingBusiness = (
     <Menu>
       <Menu.Item key="heading1">
-        <NavLink className= "dropdownLink_heading" to="#">Bylaws & Operating Aggrements</NavLink>
+        <NavLink className= "dropdownLink_heading" to="/By_Laws_operating_Agreements">By Laws & operating Agreements</NavLink>
       </Menu.Item>
       <Menu.Item key="heading2">
-        <NavLink className= "dropdownLink_heading" to="#">Business Licenses</NavLink>
+        <NavLink className= "dropdownLink_heading" to="/Business_Lisences">Business Licenses</NavLink>
       </Menu.Item>
       <Menu.Item key="heading3">
-        <NavLink className= "dropdownLink_heading" to="#">Annual Report</NavLink>
+        <NavLink className= "dropdownLink_heading" to="/Annual_report">Annual Report</NavLink>
       </Menu.Item>
       <Menu.Item key="heading4">
-        <NavLink className= "dropdownLink_heading" to="#">Certifiacte of Good Standing</NavLink>
+        <NavLink className= "dropdownLink_heading" to="/Certificate_of_Good_Standing">Certificate of Good Standing</NavLink>
       </Menu.Item>
       <Menu.Item key="heading5">
-        <NavLink className= "dropdownLink_heading" to="#">LLC Tax Status Election (form 8832)</NavLink>
+        <NavLink className= "dropdownLink_heading" to="/Scrop_Election">Scrop Election (From 2553)</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading6">
+        <NavLink className= "dropdownLink_heading" to="/LLC_Tax_Status_Election">LLC Tax Status Election (form 8832)</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading7">
+        <NavLink className= "dropdownLink_heading" to="/NonProfit_501_Status">NonProfit 501 (C) Status</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading5">
+        <NavLink className= "dropdownLink_heading" to="/DBA_Business_Name">DBA/Business Name</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading5">
+        <NavLink className= "dropdownLink_heading" to="/Register_in_Additional_States">Register in Additional States</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading5">
+        <NavLink className= "dropdownLink_heading" to="/Make_a_Payment">Make a Payment</NavLink>
+      </Menu.Item>
+      <Menu.Item key="heading5">
+        <NavLink className= "dropdownLink_heading" to="/Maintaining_a_Business">More</NavLink>
       </Menu.Item>
     </Menu>
   );
