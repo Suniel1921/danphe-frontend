@@ -22,13 +22,13 @@
     width: fit-content;
 }
 
-.redDot {
+/* .redDot {
     width: 10px;
     height: 10px;
     background-color: red;
-    border-radius: 50%; /* Creates the red dot */
-    margin-right: 8px; /* Space between the dot and text */
-}
+    border-radius: 50%; 
+    margin-right: 8px; 
+} */
 
 .service {
     font-size: 13px;

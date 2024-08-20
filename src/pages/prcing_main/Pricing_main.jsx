@@ -35,7 +35,7 @@ const Pricing_main = () => {
                         </div>
                         <Button_box/>
                     </div>
-
+                    
                     <div className="cardpopular">
                         <span className="badge">POPULAR</span>
                         <div className='popular_content'>
@@ -97,3 +97,7 @@ const Pricing_main = () => {
 }
 
 export default Pricing_main
+
+
+
+

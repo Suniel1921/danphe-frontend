@@ -197,7 +197,7 @@ const Top_main = () => {
     <>
     {/* <Navbar />  */}
       <div id="circle-border">
-        <div id="custom-cursor"></div> {/* for Red Dot Cursor */}
+        {/* <div id="custom-cursor"></div> for Red Dot Cursor */}
       </div>
       <div className="test">
       

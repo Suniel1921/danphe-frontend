@@ -88,8 +88,7 @@ const App = () => {
               <Route path='/Benefits_of_Incorporating' element={<Benefits_of_Incorporating />} />
               <Route path='/Incorporation_101' element={<Incorporation_101 />} />
               <Route path='/Industry_specific_information' element={<Industry_specific_information />} />
-              <Route path='/Tax_filings' element={<Tax_filings />} />
-              <Route path='/State_guides' element={<State_guides />} />
+              <Route path='/Tax_filings' element={<Tax_filings />} />              <Route path='/State_guides' element={<State_guides />} />
               <Route path='/Learningcenter' element={<Learningcenter />} />
 
 
