@@ -32,6 +32,9 @@ const QuotePricing = () => {
   // Render the component
   return (
     <>
+    <div className="navbarContainer">
+    <Navbar/>
+    </div>
     <div className="container">
       <div className="quote-main-container">
         <div className="quote-full-container">
