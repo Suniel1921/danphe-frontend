@@ -136,16 +136,16 @@ const Navbar = () => {
       <Menu.Item key="heading7">
         <NavLink className= "dropdownLink_heading" to="/NonProfit_501_Status">NonProfit 501 (C) Status</NavLink>
       </Menu.Item>
-      <Menu.Item key="heading5">
+      <Menu.Item key="heading8">
         <NavLink className= "dropdownLink_heading" to="/DBA_Business_Name">DBA/Business Name</NavLink>
       </Menu.Item>
-      <Menu.Item key="heading5">
+      <Menu.Item key="heading9">
         <NavLink className= "dropdownLink_heading" to="/Register_in_Additional_States">Register in Additional States</NavLink>
       </Menu.Item>
-      <Menu.Item key="heading5">
+      <Menu.Item key="heading10">
         <NavLink className= "dropdownLink_heading" to="/Make_a_Payment">Make a Payment</NavLink>
       </Menu.Item>
-      <Menu.Item key="heading5">
+      <Menu.Item key="heading11">
         <NavLink className= "dropdownLink_heading" to="/Maintaining_a_Business">More</NavLink>
       </Menu.Item>
     </Menu>
