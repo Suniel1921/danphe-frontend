@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import './Let_start.css';
 
@@ -120,3 +119,39 @@ const Let_start = () => {
 }
 
 export default Let_start;
+
+
+
+
+
+// component with image as per client required
+
+// import React from "react";
+// import './Let_start.css';
+
+// const Let_start = () => {
+//   return (
+//     <div className="let_started_Container">
+//       <div className="let_Started">
+//         <div className="leftContainer">
+//           <div className="leftContent">
+//             <h4>Get the download on corporations, LLCs, and more.</h4>
+//             <img src="/img/Image_2.jpg" alt="heroimg" />
+//           </div>
+//         </div>
+//         <div className="rightContainer">
+//           <div className="rightContent">
+//             <h4>
+//               Destination: Delaware. No matter where you're headquartered, 
+//               incorporating in Delaware could be a great move for your balance sheet. 
+//               LLCs, and more.
+//             </h4>
+//             <img src="/img/Image_2.jpg" alt="heroimg" />
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Let_start;

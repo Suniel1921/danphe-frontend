@@ -52,7 +52,7 @@ const Layout = () => {
     <>
       <div className="layoutContainer">
         {/* <Banner /> */}
-        <Navbar />
+        {/* <Navbar /> */}
        <div className="container">
       <div className='orderProgressContainer'>
       {showOrderProgress && <OrderProgress />}

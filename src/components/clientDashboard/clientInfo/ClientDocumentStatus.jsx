@@ -108,7 +108,7 @@ const ClientDocumentStatus = () => {
     const fetchDocuments = async () => {
       try {
         const response = await axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/order/yourOrder`);
-        console.log(response.data);  // Debugging line to check the data structure
+        // console.log(response.data);  
         if (response.data.success && Array.isArray(response.data.orderInfo)) {
           setDocuments(response.data.orderInfo);
         } else {
@@ -157,7 +157,7 @@ const ClientDocumentStatus = () => {
     <div className="clientDocumentStatusContainer">
       <div className="headerContainer">
         <h3>Documents</h3>
-        <h3>Status</h3>
+        <h3>Status</h3> 
       </div>
       <div className="tableContainer">
         {paginatedDocuments.map(doc => (
