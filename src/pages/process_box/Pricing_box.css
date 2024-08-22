@@ -41,10 +41,6 @@
         grid-template-columns: repeat(4, 1fr);
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 @media (min-width: 768px) and (max-width: 1000px) {
     .Features-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -65,10 +61,7 @@
     }
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 .Features-card {
     position: relative;
     padding: 1.2rem 1.7rem 1rem 2.5rem;
@@ -78,11 +71,6 @@
     background-color: #fff;
     overflow: hidden;
     transition: background 0.3s ease, color 0.3s ease;
-<<<<<<< HEAD
-=======
-    text-decoration: none; /* Remove underline from links */
-    color: inherit; /* Inherit text color from parent */
->>>>>>> origin/master
 }
 
 .Features-card::before {
@@ -139,11 +127,6 @@
     font-size: 1.2rem;
     width: 80%;
     margin-top: 30px;
-<<<<<<< HEAD
-=======
-    color: #D1344F;
-
->>>>>>> origin/master
 }
 
 .icon_grid {
@@ -209,7 +192,6 @@
         line-height: 1.7rem;
     }
     .Featured_card_bottom {
-<<<<<<< HEAD
      padding:  0;
     }
     .featureCardHeading h3 {
@@ -233,14 +215,3 @@
         line-height: 1.7rem;
     }
 } */
-=======
-        padding: 0;
-    }
-    .featureCardHeading h3 {
-        margin-top: 5px;
-    }
-    .featureCardHeading h5 {
-        padding: 5px 0 0 0;
-    }
-}
->>>>>>> origin/master

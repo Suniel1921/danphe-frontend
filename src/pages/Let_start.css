@@ -28,17 +28,10 @@
 
 .main-start{
     background-color:#D0E9F0;
-<<<<<<< HEAD
     width:90%;
     margin: 0 auto 30px auto;
     border-radius:20px;
     padding:2.5% 4% ;
-=======
-    width:94%;
-    margin: 0 auto 30px auto;
-    border-radius:20px;
-    padding:2.5% 2% ;
->>>>>>> origin/master
 }
 .upper_part{
     display:flex;
@@ -80,15 +73,9 @@
 
 .bottom_div {
     display: flex;
-<<<<<<< HEAD
     width: 30%;
     justify-content: space-between;
     padding: 10px;
-=======
-    width: 26%;
-    justify-content: space-between;
-    padding: 5px;
->>>>>>> origin/master
     border-radius: 10px;
 }
 
@@ -107,11 +94,7 @@
 
 .content {
     width: 68%;
-<<<<<<< HEAD
     margin: 0 0 0 10px;
-=======
-    margin: 0 0 0 8px;
->>>>>>> origin/master
 }
 
 .content_header {
@@ -122,28 +105,10 @@
 }
 
 .content_paragraph {
-<<<<<<< HEAD
     font-size: 0.95rem;
     line-height: 1.1rem;
     color: #6A7C92;;
 }
-=======
-    font-size: 13px;
-    line-height: 1.1rem;
-    color: #6A7C92;;
-}
-.bottom_div:last-child {
-    display: block;
-    width:18%;
-}
-
-.bottom_div_button{
-    width:100%;
-    color:white;
-    background-color:#3c3c3c;
-    margin-top:20px;
-}
->>>>>>> origin/master
 
 
 @media (min-width:768px)  and (max-width:1100px){
