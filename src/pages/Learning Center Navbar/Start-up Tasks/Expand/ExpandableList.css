@@ -21,7 +21,11 @@
   .button_expand {
     background: none;
     border: none;
+<<<<<<< HEAD
     font-size: 1.2rem;
+=======
+    font-size: 14px;
+>>>>>>> origin/master
     cursor: pointer;
     color:#D1344F;
   }

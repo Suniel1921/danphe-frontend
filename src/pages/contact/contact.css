@@ -3,6 +3,7 @@
   .ContainerForm {
     max-width: 98%;
     margin: 0 auto;
+<<<<<<< HEAD
     /* background-color: #f9f9f9; */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -10,12 +11,27 @@
   
   .contactHeader {
     font-size: 60px;
+=======
+    padding:20px 0 30px 20px;
+    /* background-color: #f9f9f9; */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .contactHeader {
+    font-size: 36px;
+    margin-top:20px;
+>>>>>>> origin/master
     margin-bottom: 10px;
     color: #333;
   }
   
   p {
+<<<<<<< HEAD
     font-size: 1.25rem;
+=======
+    font-size: 14px;
+>>>>>>> origin/master
     margin-bottom: 20px;
     color: #666;
   }
@@ -32,9 +48,16 @@
   
   .formHeader {
     color: #ffffff !important;
+<<<<<<< HEAD
     font-size: 28px;
     background-color: #003B5C;
     padding-left: 15px;
+=======
+    font-size: 24px;
+    background-color: #003B5C;
+    padding: 10px 0 10px 15px;
+    
+>>>>>>> origin/master
   }
   
   .formrow {
@@ -55,6 +78,10 @@
     color: #3c3c3c;
     font-size: 20px;
     margin-bottom: 10px;
+<<<<<<< HEAD
+=======
+    margin-left:5px;
+>>>>>>> origin/master
   }
   
   input,
@@ -82,7 +109,12 @@
   
   .submit-button {
     padding: 10px 20px;
+<<<<<<< HEAD
     background-color: #007BFF;
+=======
+    width:20%;
+    background-color: #D1344F;
+>>>>>>> origin/master
     text-align: center;
     color: white;
     border: none;

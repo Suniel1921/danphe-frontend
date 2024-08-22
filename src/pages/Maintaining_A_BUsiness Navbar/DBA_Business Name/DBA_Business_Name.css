@@ -20,7 +20,27 @@
 }
 
 .dba-business-name-right-container {
+<<<<<<< HEAD
     width: 20%;
+=======
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+}
+.dba-business-name-right_bottom-h3{
+    font-size:20px;
+    text-align:center;
+    margin-top:40px;
+    color:#3c3c3c;
+}
+/* .DBA_Business_right_bottom p{
+    font-size:14px;
+    text-align:center;
+    margin:20px auto;
+} */
+.dba-business-name-right-container_div {
+    /* width: 20%; */
+>>>>>>> origin/master
     padding: 10px 20px 0px 20px;
     margin: 0 10px;
     border-radius: 8px;
@@ -46,10 +66,33 @@
 }
 
 .dba-business-name-right-container p {
+<<<<<<< HEAD
     font-size: 18px;
     margin: 0 0 5px 0;
 }
 
+=======
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    text-align:center;
+}
+.DBA_Business_right_bottom_p{
+    padding:20px;
+}
+
+.DBA_button_fullwidth{
+    aling-itme:center;
+    textalign:center;
+    width:100%;
+    color:white;
+    background-color:#003b5C;
+    padding:10px 0;
+    margin:auto;
+}
+.DBA_button_fullwidth:hover{
+    background-color:#0475b5;
+}
+>>>>>>> origin/master
 @media(max-width: 768px) {
     .dba-business-name-bottom-container {
         display: block;

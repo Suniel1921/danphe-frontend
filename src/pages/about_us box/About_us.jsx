@@ -82,6 +82,10 @@ import React, { useState } from 'react';
 import './About_us.css';
 import Image_1 from './Image_1.png'; // Main image
 import Image_2 from './Image_2.jpg'; // Circle image
+<<<<<<< HEAD
+=======
+import { Link } from 'react-router-dom';
+>>>>>>> origin/master
 
 // Accordion Component
 const Accordion = ({ title, content, isOpen, onClick }) => {
@@ -130,25 +134,63 @@ const About_us = () => {
         {/* Accordion Components */}
         <Accordion
           title="Limited liability company (LLC)"
+<<<<<<< HEAD
           content=" The perfect first step. An LLC is a great way to start a new company. Incorporating your business this way protects your personal assets, and gives your business legitimacy. "
+=======
+          content={
+            <>
+              The perfect first step. An LLC is a great way to start a new company. Incorporating your business this way protects your personal assets, and gives your business legitimacy. 
+              Learn more about it.
+              <br/>
+              <Link to="/Limited_Liability_Company"> Get more information.</Link>.
+            </>
+          }
+>>>>>>> origin/master
           isOpen={openAccordionIndex === 0} // Only open if this accordion is the active one
           onClick={() => handleAccordionClick(0)}
         />
         <Accordion
           title="C Corporation (C corp)"
+<<<<<<< HEAD
           content="Hello, Wall Street. In addition to personal asset protection, the C corp structure also creates unlimited growth potential. Once you're incorporated, you can issue any class of stock to any number of investors."
+=======
+          content={
+            <>
+            Hello, Wall Street. In addition to personal asset protection, the C corp structure also creates unlimited growth potential. Once you're incorporated, you can issue any class of stock to any number of investors.<br/>
+            <Link to="/C_Corporation"> Get more information.</Link>
+            </>
+          }
+>>>>>>> origin/master
           isOpen={openAccordionIndex === 1} // Only open if this accordion is the active one
           onClick={() => handleAccordionClick(1)}
         />
         <Accordion
           title="S Corporation (S corp)"
+<<<<<<< HEAD
           content="One big perk, but lots of strings. This structure exempts your incorporated company from federal income taxes, but at the cost of additional rules and limitations."
+=======
+          content={
+            <>
+            One big perk, but lots of strings. This structure exempts your incorporated company from federal income taxes, but at the cost of additional rules and limitations.<br/>
+            <Link to="/S_Corporation"> Get more information.</Link>.
+            </>
+          }
+>>>>>>> origin/master
           isOpen={openAccordionIndex === 2} // Only open if this accordion is the active one
           onClick={() => handleAccordionClick(2)}
         />
         <Accordion
           title="Nonprofit"
+<<<<<<< HEAD
           content="You know who you are. When you're in business to do good, a nonprofit designation offers rock-solid personal asset protection, tax benefits, and more."
+=======
+          content={
+            <>
+            You know who you are. When you're in business to do good, a nonprofit designation offers rock-solid personal asset protection, tax benefits, and more.<br/>
+            <Link to="/None_Profit_Corporation"> Get more information.</Link>.
+            </>
+          }
+>>>>>>> origin/master
           isOpen={openAccordionIndex === 3} // Only open if this accordion is the active one
           onClick={() => handleAccordionClick(3)}
         />

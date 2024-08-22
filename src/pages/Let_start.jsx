@@ -113,6 +113,20 @@ const Let_start = () => {
             </div>
           </div>
         </div>
+<<<<<<< HEAD
+=======
+
+
+
+        <div className='bottom_div'>
+          <h2 className='content_header'>
+            Get the download on Corporations, LLCs, & More.
+          </h2>
+          <button className='bottom_div_button'>
+            Download The Free Guide
+          </button>
+        </div>
+>>>>>>> origin/master
       </div>
     </div>
   );

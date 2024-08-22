@@ -66,11 +66,19 @@ const Footer = () => {
         </div>
       </div>
 
+<<<<<<< HEAD
       <div className="footer-bottom">
         <div className="left_footer">
           <p>
             Copyright © 2024 . Powered By
             {/* <Link to="/some-route">Go to Some Route</Link> */}
+=======
+      {/* <div className="footer-bottom">
+        <div className="left_footer">
+          <p>
+            Copyright © 2024 . Powered By
+            <Link to="/some-route">Go to Some Route</Link>
+>>>>>>> origin/master
             <a href="https://www.nepaltechinnov.com/" target="_blank" rel="noopener noreferrer"> Nepal Tech Innovations Pvt. Ltd.</a>
           </p>
 
@@ -82,7 +90,11 @@ const Footer = () => {
             
           </ul>
         </div>
+<<<<<<< HEAD
       </div>
+=======
+      </div> */}
+>>>>>>> origin/master
     </footer>
   );
 };
