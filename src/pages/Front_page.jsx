@@ -22,8 +22,13 @@ import BusinessIcon from "@mui/icons-material/Business";
 import RoomIcon from "@mui/icons-material/Room";
 import { useNavigate } from "react-router-dom";
 
+
 const Front_page = () => {
   const navigate = useNavigate();
+  // const handleServiceClick = (path) => {
+  //   navigate(path);
+  // };
+  
 
   return (
     <>
@@ -62,7 +67,7 @@ const Front_page = () => {
       </div>
 
       <div className="container-box">
-        <div className="single-service-box">
+        <div className="single-service-box" onClick={() => navigate("/Registered_in_additional_states")}>
           <BusinessIcon className="single-icon" />
 
           <h3 className="single-box-header">Register in Additional States</h3>
@@ -77,7 +82,7 @@ const Front_page = () => {
           </div>
         </div>
 
-        <div className="single-service-box">
+        <div className="single-service-box" onClick={() => navigate("/State_guides")}>
           <RoomIcon className="single-icon" />
 
           <h3 className="single-box-header">Find a State</h3>
@@ -92,7 +97,7 @@ const Front_page = () => {
           </div>
         </div>
 
-        <div className="single-service-box">
+        <div className="single-service-box" onClick={() => navigate("/Registered_Agent_Service")}>
           <AssignmentTurnedInIcon className="single-icon" />
 
           <h3 className="single-box-header">Stay on Track</h3>

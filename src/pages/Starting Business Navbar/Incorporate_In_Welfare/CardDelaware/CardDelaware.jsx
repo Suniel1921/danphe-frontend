@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './CardDelaware.css';
 
 const CardDelaware = () => {
   return (
     <div className="card_delware-section">
-      {/* <h2>Still Exploring Your Options? Learn More About Starting a Corporation or LLC in Delaware.</h2> */}
       <div className="card_delware-columns-container">
         <div className="card_delware-column">
           <div className="card_delware-card">
@@ -16,10 +16,10 @@ const CardDelaware = () => {
           <div className="card_delware-info-section">
             <h3>Starting Out</h3>
             <ul>
-              <li>Incorporate in Delaware</li>
-              <li>Forming a Delaware LLC</li>
-              <li>Delaware Business Name Search</li>
-              <li>Delaware Business Licenses</li>
+              <li><Link to="/delware_welfare">Incorporate in Delaware</Link></li>
+              <li><Link to="/FormingaDelawareLLC">Forming a Delaware LLC</Link></li>
+              <li><Link to="/DelawareBusinessNameSearch">Delaware Business Name Search</Link></li>
+              <li><Link to="/DelawareBusinessLicenses">Delaware Business Licenses</Link></li>
             </ul>
           </div>
         </div>
@@ -33,9 +33,9 @@ const CardDelaware = () => {
           <div className="card_delware-info-section">
             <h3>Why Delaware?</h3>
             <ul>
-              <li>Advantages of Incorporating in Delaware</li>
-              <li>How To & Why Incorporate in Delaware</li>
-              <li>DE vs. NV</li>
+              <li><Link to="/AdvantagesofIncorporatinginDelwar">Advantages of Incorporating in Delaware</Link></li>
+              <li><Link to="/HowToWhyIncorporateinDelaware">How To & Why Incorporate in Delaware</Link></li>
+              <li><Link to="/DE_VS_NV">DE vs. NV</Link></li>
             </ul>
           </div>
         </div>
@@ -49,11 +49,11 @@ const CardDelaware = () => {
           <div className="card_delware-info-section">
             <h3>Ready, Set, Get Started!</h3>
             <ul>
-              <li>Incorporate Your Business Today</li>
-              <li>Fees to Start a Business in Delaware</li>
-              <li>Delaware Filing Forms</li>
-              <li>Formation/Registration</li>
-              <li>Taxes</li>
+              <li><Link to="#">Incorporate Your Business Today</Link></li>
+              <li><Link to="/Fees_to_Start_a_Business_in_Delaware">Fees to Start a Business in Delaware</Link></li>
+              <li><Link to="/Delaware_Filing_Forms">Delaware Filing Forms</Link></li>
+              <li><Link to="/Formation_Registration">Formation/Registration</Link></li>
+              <li><Link to="/Taxes">Taxes</Link></li>
             </ul>
           </div>
         </div>

@@ -3,19 +3,21 @@
   .ContainerForm {
     max-width: 98%;
     margin: 0 auto;
+    padding:20px 0 30px 20px;
     /* background-color: #f9f9f9; */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   }
   
   .contactHeader {
-    font-size: 60px;
+    font-size: 36px;
+    margin-top:20px;
     margin-bottom: 10px;
     color: #333;
   }
   
   p {
-    font-size: 1.25rem;
+    font-size: 14px;
     margin-bottom: 20px;
     color: #666;
   }
@@ -32,9 +34,10 @@
   
   .formHeader {
     color: #ffffff !important;
-    font-size: 28px;
+    font-size: 24px;
     background-color: #003B5C;
-    padding-left: 15px;
+    padding: 10px 0 10px 15px;
+    
   }
   
   .formrow {
@@ -55,6 +58,7 @@
     color: #3c3c3c;
     font-size: 20px;
     margin-bottom: 10px;
+    margin-left:5px;
   }
   
   input,
@@ -82,7 +86,8 @@
   
   .submit-button {
     padding: 10px 20px;
-    background-color: #007BFF;
+    width:20%;
+    background-color: #D1344F;
     text-align: center;
     color: white;
     border: none;
