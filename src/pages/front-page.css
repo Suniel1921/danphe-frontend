@@ -206,9 +206,6 @@
     overflow: hidden; /* Ensure text doesn't overflow */
     transition: transform 0.3s ease-in-out; /* Smooth transition for box effect */
 }
-.single-service-box:hover{
-    cursor:pointer;
-}
 
 /* .single-icon {
     background-color:#F3F4F7;

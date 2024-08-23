@@ -28,10 +28,10 @@
 
 .main-start{
     background-color:#D0E9F0;
-    width:94%;
+    width:90%;
     margin: 0 auto 30px auto;
     border-radius:20px;
-    padding:2.5% 2% ;
+    padding:2.5% 4% ;
 }
 .upper_part{
     display:flex;
@@ -73,9 +73,9 @@
 
 .bottom_div {
     display: flex;
-    width: 26%;
+    width: 30%;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
 }
 
@@ -94,7 +94,7 @@
 
 .content {
     width: 68%;
-    margin: 0 0 0 8px;
+    margin: 0 0 0 10px;
 }
 
 .content_header {
@@ -105,20 +105,9 @@
 }
 
 .content_paragraph {
-    font-size: 13px;
+    font-size: 0.95rem;
     line-height: 1.1rem;
     color: #6A7C92;;
-}
-.bottom_div:last-child {
-    display: block;
-    width:18%;
-}
-
-.bottom_div_button{
-    width:100%;
-    color:white;
-    background-color:#3c3c3c;
-    margin-top:20px;
 }
 
 

@@ -81,8 +81,7 @@
 
 .Overview_tab_image {
   height: 350px;
-  width: 80%;
-  object-fit:cover;
+  width: 100%;
   margin: 20px auto;
 }
 
@@ -101,13 +100,11 @@
   margin-bottom: 20px;
 }
 
-
 .youtube-embed iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  object-fit:cover;
   height: 100%;
 }
 .Tabs_overview_button_full_left {

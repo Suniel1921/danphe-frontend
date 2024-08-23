@@ -1,7 +1,5 @@
 import React from 'react';
 import './Benefits_of_Incorporating.css';
-import { Link } from 'react-router-dom';
-import ComparisonChart from './Comparision chart/ComparisonChart';
 
 const BenefitsOfIncorporating = () => {
   return (
@@ -58,16 +56,14 @@ const BenefitsOfIncorporating = () => {
             <li>Structure flexibility</li>
           </ul>
           <p className="benefits_paragraph">
-            Learn more about the similarities and differences with our comprehensive 
-            <Link to="/ComparisonChart">Comparison chart</Link>
-
+            Learn more about the similarities and differences with our comprehensive comparison chart.
           </p>
 
           <h2 className="benefits_subheading">Where Should I Incorporate My Business?</h2>
           <p className="benefits_paragraph">
             Depending on which corporation type you decide is right for you, there is some flexibility on where you incorporate. Most people incorporate their business in the state where they live and conduct most of their business. However, many owners have found incorporating in another state to be better for their bottom line.
           </p>
-          {/* <p className="benefits_paragraph">
+          <p className="benefits_paragraph">
             The top states include:
           </p>
           <ul className='benefit_list'>
@@ -77,13 +73,12 @@ const BenefitsOfIncorporating = () => {
             <li>Maryland</li>
             <li>Pennsylvania</li>
             <li>Connecticut</li>
-          </ul> */}
+          </ul>
 
           <h3>
             Ready to create your company?
           </h3>
           <button className="benefits_button_full_left">Get Started</button>
-          {/* <ComparisonChart/> */}
 
         </div>
 

@@ -110,14 +110,6 @@
 .accordion-content {
   padding: 10px;
 }
-.accordion-content a {
-  color: #d1344f; /* Set the link color */
-  text-decoration: none; /* Remove underline */
-}
-
-.accordion-content a:hover {
-  text-decoration: underline; /* Add underline on hover */
-}
 
 @media(max-width:768px){
   .about_main {
