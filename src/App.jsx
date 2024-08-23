@@ -131,7 +131,7 @@ const App = () => {
               <Route path='/DelawareBusinessNameSearch' element ={ <DelawareBusinessNameSearch/> } />
               <Route path='/HowToWhyIncorporateinDelaware' element ={ <HowToWhyIncorporateinDelaware/> } />
               <Route path='/DE_VS_NV' element ={ <DE_VS_NV/> } />
-              <Route path='/Delaware_Filing_Forms' element ={ <Delaware_Filing_Forms/> } />
+              <Route path='/Delaware_Filing_Forms' elgotement ={ <Delaware_Filing_Forms/> } />
               <Route path='/Formation_Registration' element ={ <Formation_Registration/> } />
               <Route path='/Taxes' element ={ <Taxes/> } />
               <Route path='/Fees_to_Start_a_Business_in_Delaware' element ={ <Fees_to_Start_a_Business_in_Delaware/> } />
